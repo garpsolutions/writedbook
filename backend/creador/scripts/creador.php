@@ -46,13 +46,13 @@ $conexion->query("CREATE TABLE $namedb.estudiantes
  `curso_actual` VARCHAR(100) NULL , 
  `indice` INT(4) NULL , 
  `estado` VARCHAR(100) NULL , 
- `fecha_creacion` TIMESTAMP NULL , 
+ `fecha_creacion` TIMESTAMP , 
  `fecha_modificacion` TIMESTAMP NULL , 
  `creado_por` VARCHAR(100) NULL , 
  `modificado_por` VARCHAR(100) NULL ,
   PRIMARY KEY (`id_estudiante`)) ENGINE = InnoDB;
 ");
-$conexion->query("CREATE TABLE `mateo`.`planificacion_inicial`
+$conexion->query("CREATE TABLE $namedb.planificacion_inicial
  ( `id_planificacion` INT NOT NULL AUTO_INCREMENT , 
  `docente` VARCHAR(200) NULL , 
  `año` VARCHAR(100) NULL , 
@@ -68,12 +68,59 @@ $conexion->query("CREATE TABLE `mateo`.`planificacion_inicial`
  `saber_previo` TEXT NULL , 
  `nuevo_saber` TEXT NULL , 
  `como_saber` TEXT NULL , 
- `fecha_creacion` TIMESTAMP NULL , 
+ `fecha_creacion` TIMESTAMP  , 
  `fecha_modificacion` TIMESTAMP NULL , 
  `creado_por` VARCHAR(100) NULL , 
  `modificado_por` VARCHAR(100) NULL , 
  PRIMARY KEY (`id_planificacion`)) ENGINE = InnoDB;
 ");
+$conexion->query("CREATE TABLE $namedb.reportes_conducta
+ ( `id_reporte` INT NOT NULL AUTO_INCREMENT , 
+ `estudiante` VARCHAR(200) NULL , 
+ `tipo_reporte` VARCHAR(100) NULL , 
+ `detalle` TEXT NULL , 
+ `afectados` TEXT NULL , 
+ `recomendaciones` TEXT NULL , 
+ `decision` TEXT NULL , 
+ `fecha_creacion` TIMESTAMP , 
+ `creado_por` VARCHAR(100) NULL ,
+  PRIMARY KEY (`id_reporte`)) ENGINE = InnoDB;
+");
+
+$conexion->query("CREATE TABLE $namedb.actividades
+( `id_actividad` INT NOT NULL AUTO_INCREMENT , 
+`fecha` VARCHAR NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+`creado_por` VARCHAR(100) NULL , 
+`observaciones` TEXT NULL ,
+`evaluacion` TEXT NULL ,
+`docente` VARCHAR(100) NULL , 
+`curso` VARCHAR(100) NULL , 
+PRIMARY KEY (`id_actividad`)) ENGINE = InnoDB;
+");
+
+$conexion->query(" CREATE TABLE `mateo`.`solicitud_empleo` 
+( `id_solicitud` INT NOT NULL AUTO_INCREMENT , 
+`nombre` VARCHAR(100) NULL , 
+`cedula` VARCHAR(100) NULL , 
+`telefono` VARCHAR(100) NULL ,
+ `direccion` TEXT NULL , 
+ `celular` VARCHAR(100) NULL , 
+ `estado_civil` VARCHAR(100) NULL , 
+ `email` VARCHAR(200) NULL , 
+ `puesto_solicitado` VARCHAR(100) NULL , 
+ `aspiracion_salarial` INT NULL , 
+ `universidad_estudio` TEXT NULL , 
+ `especialidades` TEXT NULL , 
+ `disponibilidad_extra` VARCHAR(100) NULL , 
+ `fecha_creacion` TIMESTAMP NOT NULL , 
+ PRIMARY KEY (`id_solicitud`)) ENGINE = InnoDB;
+
+");
+
+
+
+
 
 
 
