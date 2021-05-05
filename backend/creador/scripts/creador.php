@@ -99,7 +99,7 @@ $conexion->query("CREATE TABLE $namedb.actividades
 PRIMARY KEY (`id_actividad`)) ENGINE = InnoDB;
 ");
 
-$conexion->query(" CREATE TABLE `mateo`.`solicitud_empleo` 
+$conexion->query(" CREATE TABLE $namedb.solicitud_empleo 
 ( `id_solicitud` INT NOT NULL AUTO_INCREMENT , 
 `nombre` VARCHAR(100) NULL , 
 `cedula` VARCHAR(100) NULL , 
@@ -115,15 +115,26 @@ $conexion->query(" CREATE TABLE `mateo`.`solicitud_empleo`
  `disponibilidad_extra` VARCHAR(100) NULL , 
  `fecha_creacion` TIMESTAMP NOT NULL , 
  PRIMARY KEY (`id_solicitud`)) ENGINE = InnoDB;
-
 ");
-
-
-
-
-
-
-
+$conexion->query(" CREATE TABLE $namedb.docentes
+( `id_docente` INT NOT NULL AUTO_INCREMENT , 
+`nombre_docente` VARCHAR(200) NOT NULL , 
+`apellido` VARCHAR(200) NOT NULL , 
+`area` VARCHAR(100) NOT NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL ,
+ PRIMARY KEY (`id_docente`)) ENGINE = InnoDB;
+");
+$conexion->query("CREATE TABLE $namedb.asignaturas 
+( `id_asignatura` INT NOT NULL AUTO_INCREMENT , 
+`asignatura` VARCHAR(200) NULL , 
+`curso` VARCHAR(100) NULL , 
+`docente` VARCHAR(100) NULL , 
+`estado` VARCHAR(100) NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_asignatura`)) ENGINE = InnoDB;
+");
 
 
 
