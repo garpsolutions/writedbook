@@ -22,11 +22,11 @@
                 </div>
             <div class="submenu-ancho estudiantes-menu-ancho">
                 <div>
-                <a href="../proyectos/nuevo.php">Iniciar proyecto</a>
+                <a href="../formularios/estudiantes.html">Inscripciones</a>
                     <hr>
                 </div>
                 <div>
-                <a href="../proyectos/ver_proyectos.php">Lista de Proyectos</a>
+                <a href="../formularios/estudiantes.php">Record de Notas</a>
                    <hr>
                 </div>
             </div>
