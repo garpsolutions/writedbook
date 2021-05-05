@@ -1,0 +1,38 @@
+#img-fondo{
+    background-image:url('../img/fondo-login.jpg');
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    min-height:100%; 
+    position:absolute;
+    min-width:100%
+}
+#opacidad{
+    background-color:black; 
+    opacity:0.9; 
+    min-height:100%; 
+    position:absolute;
+    min-width:100%
+}
+#box-login{
+    background-color: white; 
+    position:absolute;
+    padding:20px; 
+    width:350px; 
+    min-height:100%
+}
+#top{
+    color:rgb(13, 13, 112); 
+    font-size:25px; 
+    margin-top:50px;
+}
+#pie{
+    margin-bottom:60px;
+    margin-left:6%;
+}
+#init{
+    background-color: rgb(13, 13, 112);
+    color: white;
+}
+.formulario{
+    background-color: rgb(202, 198, 198);
+}
