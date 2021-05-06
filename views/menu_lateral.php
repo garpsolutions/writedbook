@@ -40,11 +40,16 @@
                 </div>
             <div class="submenu-ancho docentes-menu-ancho">
                 <div>
-                <a href="../proyectos/nuevo.php">Nuevo cliente</a>
+                <a href="../proyectos/nuevo.php">Planificación</a>
                     <hr>
                 </div>
                 <div>
-                <a href="../proyectos/ver_proyectos.php">Lista de clientes</a>
+                <a href="../docentes/notas.php">Registrar Notas</a>
+                   <hr>
+                </div>
+
+                <div>
+                <a href="../docentes/asistencia.php">Registrar Asistencias</a>
                    <hr>
                 </div>
             </div>
