@@ -1,7 +1,8 @@
 <?php 
 include("../menu_lateral.php"); 
 ?>
-<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:60%; padding:20px; margin-left:300px;">
+
+<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:60%; padding:20px; margin-left:24%;">
     <div>
     <form action="" method="post">
       <h5> Datos del estudiante </h5> 
@@ -10,19 +11,21 @@ include("../menu_lateral.php");
                 <input class="form-control" type="text" name="" placeholder="Nombre del estudiante" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Apellido" name="" id="" require>
+                <input class="form-control" type="Text" placeholder="Apellido paterno" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Direccion" name="" id="" require>
+                <input class="form-control" type="Text" placeholder="Apellido materno" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Email" name="" id="" require>
+                <input class="form-control" type="text" placeholder="Colegio anterior" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="000-000-0000" name="" id="" require>
+                <input class="form-control" type="text" placeholder="Curso anterior" name="" id="" require>
             </div>
-            <div><br>
-            <select class="form-control" name="meal_preference" id="meal_preference">
+            <div class="col-md-6"><br>
+                <label for="">
+                    Seleccione una provincia</label>
+            <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">Provincias</option>
                 <option value="Santo Domingo">Santo Domingo</option>
                 <option value="Distrito Nacional">Distrito Nacional</option>
@@ -58,6 +61,16 @@ include("../menu_lateral.php");
                 <option value="Pedernales">Pedernales</option>
             </select>
             </div>
+            <div class="col-md-6"><br>
+            <label for="">Fecha de Nacimiento</label>
+                <input class="form-control" type="Date" placeholder="000-000-0000" name="" id="" require>
+            </div>
+            <div class="col-md-12"><br>
+            <label for="">Motivo de salida</label>
+            <textarea class="form-control" placeholder="Razon de salida de la institucion anterior" name="" id="" cols="10" rows="4"></textarea>
+            </div>
+            
+
             <div class="col-md-12"><br>
                 <button class="btn btn-danger">Siguiente</button>
             </div>

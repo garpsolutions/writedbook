@@ -46,6 +46,7 @@ $conexion->query("CREATE TABLE $namedb.estudiantes
  `curso_actual` VARCHAR(100) NULL , 
  `indice` INT(4) NULL , 
  `estado` VARCHAR(100) NULL , 
+ `fecha_nacimiento` DATE NULL ,
  `fecha_creacion` TIMESTAMP , 
  `fecha_modificacion` TIMESTAMP NULL , 
  `creado_por` VARCHAR(100) NULL , 

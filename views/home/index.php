@@ -3,7 +3,7 @@ include("../menu_lateral.php");
 ?>
 <div class="row" id="numeros" style=" margin-top:50px;">
 
-    <div class="numero_dashboard col-md-2" style="border-right:solid 2px gray; margin-left: 50px;">
+    <div class="numero_dashboard col-md-2" style="border-right:solid 2px gray; ">
         <strong>
         <div>
             Estudiantes

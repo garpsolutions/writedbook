@@ -22,7 +22,7 @@
                 </div>
             <div class="submenu-ancho estudiantes-menu-ancho">
                 <div>
-                <a href="../formularios/estudiantes.html">Inscripciones</a>
+                <a href="../formularios/estudiantes.php">Inscripciones</a>
                     <hr>
                 </div>
                 <div>
