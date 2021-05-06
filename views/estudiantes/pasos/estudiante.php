@@ -68,7 +68,8 @@
             <textarea class="form-control" placeholder="Razon de salida de la institucion anterior" name="" id="" cols="10" rows="4"></textarea>
             </div>
             <div class="col-md-12"><br>
-                <a class="btn btn-danger" id="siguiente1">Siguiente</a>
+                <a  style="float: right;"
+                class="btn btn-danger " id="siguiente1">Siguiente</a>
             </div>
         </form>
         </div>

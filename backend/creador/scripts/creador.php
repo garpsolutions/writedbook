@@ -121,7 +121,9 @@ $conexion->query(" CREATE TABLE $namedb.docentes
 ( `id_docente` INT NOT NULL AUTO_INCREMENT , 
 `nombre_docente` VARCHAR(200) NOT NULL , 
 `apellido` VARCHAR(200) NOT NULL , 
-`area` VARCHAR(100) NOT NULL , 
+`telefono` VARCHAR(200) NOT NULL , 
+`titulo` VARCHAR(100) NOT NULL , 
+`foto` VARCHAR(100) NULL ,
 `creado_por` VARCHAR(100) NOT NULL , 
 `fecha_creacion` TIMESTAMP NOT NULL ,
  PRIMARY KEY (`id_docente`)) ENGINE = InnoDB;

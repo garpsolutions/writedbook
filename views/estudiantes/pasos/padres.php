@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-6"><br>
                 <label for="">Telefono de la padre</label>
-                <input class="form-control" type="text" placeholder="000-000-000" name="" id="" require>
+                <input class="form-control" type="text" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <label for=""><label for="">Celular de la padre</label></label>
@@ -34,7 +34,8 @@
                 <a   class="btn btn-primary " id="anterior1">Anterior</a>
             </div>
             <div class="col-md-6"><br>
-                <a  style="float: right;"class="btn btn-danger " id="siguiente2">Siguiente</a>
+                <a  style="float: right;"
+                class="btn btn-danger " id="siguiente2">Siguiente</a>
             </div>
             
         </form>
