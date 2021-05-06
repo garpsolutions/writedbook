@@ -90,7 +90,7 @@ $conexion->query("CREATE TABLE $namedb.reportes_conducta
 
 $conexion->query("CREATE TABLE $namedb.actividades
 ( `id_actividad` INT NOT NULL AUTO_INCREMENT , 
-`fecha` VARCHAR NULL , 
+`fecha` VARCHAR(100) NULL , 
 `fecha_creacion` TIMESTAMP NOT NULL , 
 `creado_por` VARCHAR(100) NULL , 
 `observaciones` TEXT NULL ,
