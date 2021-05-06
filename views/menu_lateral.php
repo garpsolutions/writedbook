@@ -22,11 +22,11 @@
                 </div>
             <div class="submenu-ancho estudiantes-menu-ancho">
                 <div>
-                <a href="../formularios/estudiantes.php">Inscripciones</a>
+                <a href="../estudiantes/estudiantes.php">Inscripciones</a>
                     <hr>
                 </div>
                 <div>
-                <a href="../formularios/estudiantes.php">Record de Notas</a>
+                <a href="../estudiantes/estudiantes.php">Record de Notas</a>
                    <hr>
                 </div>
             </div>
