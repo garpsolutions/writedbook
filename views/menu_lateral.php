@@ -33,7 +33,7 @@
         </div>
         <div id="docentes-ancho" class="opciones-menu-ancho row" >
             <div class="col-md-10" style="padding-bottom:10px;">
-            <i class="fa fa-address-book"></i> Docentes
+            <i class="fa fa-address-book"></i> Asignaturas
                 </div>
                 <div class="col-md-2">
                     +
@@ -44,30 +44,35 @@
                     <hr>
                 </div>
                 <div>
-                <a href="../docentes/notas.php">Registrar Notas</a>
+                <a href="../asignaturas/pasoasignaturas.php">Registrar Notas</a>
                    <hr>
                 </div>
 
                 <div>
-                <a href="../docentes/asistencia.php">Registrar Asistencias</a>
+                <a href="../asignaturas/pasoasignaturas.php">Registrar Asistencias</a>
                    <hr>
                 </div>
             </div>
         </div>
         <div id="asignaturas-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
-            <i class="fa fa-users"></i> Asignaturas
+            <i class="fa fa-users"></i> Docentes
             </div>
             <div class="col-md-2">
                 +
             </div>
             <div class="submenu-ancho asignaturas-menu-ancho">
                 <div>
-                <a href="../proyectos/nuevo.php">Nuevo proveedor</a>
+                <a href="../proyectos/nuevo.php">Agregar Docentes</a>
                     <hr>
                 </div>
                 <div>
-                <a href="../proyectos/ver_proyectos.php">Lista de proveedores</a>
+                <a href="../proyectos/nuevo.php">Modificar Docentes</a>
+                    <hr>
+                </div>
+               
+                <div>
+                <a href="../proyectos/ver_proyectos.php">Listas de Docentes</a>
                    <hr>
                 </div>
             </div>
