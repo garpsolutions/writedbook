@@ -41,8 +41,9 @@
             </div>
             <div class="col-md-6"><br>
             </div>
+            
             <div class="col-md-12"><br>
-                <button class="btn btn-success">Cancelar</button> <button class="btn btn-danger"> Atras</button> <button class="btn btn-danger"> Guardar</button>
+            <a   class="btn btn-primary " id="anterior1">Anterior</a>  <button class="btn btn-success">Cancelar</button>  <button class="btn btn-danger"> Guardar</button>
             </div>
 
         </form>
