@@ -2,7 +2,6 @@
 
 <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:60%; padding:20px; margin-left:24%;">
     <div>
-    <form action="" method="post">
       <h5> Datos del estudiante </h5> 
         <div class="row">
             <div class="col-md-16"><br>
@@ -71,7 +70,6 @@
                 <a  style="float: right;"
                 class="btn btn-primary " id="siguiente1">Siguiente</a>
             </div>
-        </form>
         </div>
     </div>
 </div>
