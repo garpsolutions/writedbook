@@ -128,6 +128,7 @@ $conexion->query(" CREATE TABLE $namedb.docentes
 `fecha_creacion` TIMESTAMP NOT NULL ,
  PRIMARY KEY (`id_docente`)) ENGINE = InnoDB;
 ");
+
 $conexion->query("CREATE TABLE $namedb.asignaturas 
 ( `id_asignatura` INT NOT NULL AUTO_INCREMENT , 
 `asignatura` VARCHAR(200) NULL , 
@@ -138,9 +139,6 @@ $conexion->query("CREATE TABLE $namedb.asignaturas
 `fecha_creacion` TIMESTAMP NOT NULL , 
 PRIMARY KEY (`id_asignatura`)) ENGINE = InnoDB;
 ");
-
-
-
     header("location:../views/creador_user.php?empresa=$namedb");
     
 ?>

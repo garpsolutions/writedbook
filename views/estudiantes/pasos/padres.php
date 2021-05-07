@@ -31,11 +31,11 @@
                 <textarea class="form-control"  placeholder="Direccion" name="" id="" cols="30" rows="4"></textarea>
             </div>
             <div class="col-md-6"><br>
-                <a   class="btn btn-primary " id="anterior1">Anterior</a>
+                <a   class="btn btn-danger " id="anterior1">Anterior</a>
             </div>
             <div class="col-md-6"><br>
                 <a  style="float: right;"
-                class="btn btn-danger " id="siguiente2">Siguiente</a>
+                class="btn btn-primary " id="siguiente2">Siguiente</a>
             </div>
             
         </form>

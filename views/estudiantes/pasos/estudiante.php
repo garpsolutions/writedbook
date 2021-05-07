@@ -69,7 +69,7 @@
             </div>
             <div class="col-md-12"><br>
                 <a  style="float: right;"
-                class="btn btn-danger " id="siguiente1">Siguiente</a>
+                class="btn btn-primary " id="siguiente1">Siguiente</a>
             </div>
         </form>
         </div>

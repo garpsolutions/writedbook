@@ -21,11 +21,11 @@
                 <input class="form-control" type="file" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <a   class="btn btn-primary " id="anterior4">Anterior</a>
+                <a   class="btn btn-danger " id="anterior4">Anterior</a>
             </div>
             <div class="col-md-6"><br>
                 <a  style="float: right;"
-                class="btn btn-danger " id="siguiente4">Guardar</a>
+                class="btn btn-success " id="siguiente4">Guardar</a>
             </div>
         </form>
         </div>

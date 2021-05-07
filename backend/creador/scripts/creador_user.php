@@ -8,5 +8,5 @@
     //creacion de usuario admin
     $conexion->query("INSERT INTO $empresa.usuarios (user_nombre ,nombre, user_password) VALUES ('$username','$name','$password')");
 
-    header("location:../../../production/login.html");
+    header("location:../../../views/login/login.php");
 ?>

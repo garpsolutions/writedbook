@@ -22,11 +22,11 @@
                 <input class="form-control" type="text" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <a   class="btn btn-primary " id="anterior2">Anterior</a>
+                <a   class="btn btn-danger " id="anterior2">Anterior</a>
             </div>
             <div class="col-md-6"><br>
                 <a  style="float: right;"
-                class="btn btn-danger " id="siguiente3">Siguiente</a>
+                class="btn btn-primary " id="siguiente3">Siguiente</a>
             </div>
         </form>
         </div>
