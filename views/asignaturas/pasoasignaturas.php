@@ -16,10 +16,6 @@ include("../menu_lateral.php");
 <script>
 //formularios inicialmente ocultos
     $("#notas").hide();
-<<<<<<< HEAD
-=======
-    
->>>>>>> 7e36364734295d57f198e33a8d95ce50c2cb363e
 //Mostrar notas
     $("#siguiente1").click(function(){
         $("#notas").animate({
