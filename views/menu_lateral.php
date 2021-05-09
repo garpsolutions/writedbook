@@ -79,18 +79,18 @@
         </div>
         <div id="cursos-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
-            <i class="fa fa-codepen"></i> Aulas
+            <i class="fa fa-codepen"></i> Cursos
             </div>
             <div class="col-md-2">
                 +
             </div>
             <div class="submenu-ancho cursos-menu-ancho">
                 <div>
-                    <a href="../proyectos/nuevo.php">Crear aulas</a>
+                    <a href="../cursos/creacion_de_cursos.php">Crear Curso</a>
                     <hr>
                 </div>
                 <div>
-                    <a href="../proyectos/ver_proyectos.php">Ver aulas</a>
+                    <a href="../proyectos/ver_proyectos.php">Crear Aulas</a>
                    <hr>
                 </div>
             </div>
