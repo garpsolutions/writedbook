@@ -100,7 +100,11 @@
                     <hr>
                 </div>
                 <div>
-                    <a href="../proyectos/ver_proyectos.php">Crear Aulas</a>
+                    <a href="../cursos/creacion_de_aulas.php">Crear Aulas</a>
+                   <hr>
+                </div>
+                <div>
+                    <a href="../cursos/add_estudiante.php">Asignar Estudiantes</a>
                    <hr>
                 </div>
             </div>
