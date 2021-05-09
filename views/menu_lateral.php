@@ -39,6 +39,12 @@
                     +
                 </div>
             <div class="submenu-ancho docentes-menu-ancho">
+                
+            <div>
+                <a href="../asignaturas/crear_asignatura.php">Crear Asignatura</a>
+                    <hr>
+                </div>
+
                 <div>
                 <a href="../proyectos/nuevo.php">Planificación</a>
                     <hr>
@@ -49,7 +55,7 @@
                 </div>
 
                 <div>
-                <a href="../asignaturas/pasoasignaturas.php">Registrar Asistencias</a>
+                <a href="../asignaturas/asistencia.php">Registrar Asistencias</a>
                    <hr>
                 </div>
             </div>
@@ -79,18 +85,22 @@
         </div>
         <div id="cursos-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
-            <i class="fa fa-codepen"></i> Aulas
+            <i class="fa fa-codepen"></i> Cursos
             </div>
             <div class="col-md-2">
                 +
             </div>
             <div class="submenu-ancho cursos-menu-ancho">
                 <div>
-                    <a href="../proyectos/nuevo.php">Crear aulas</a>
+                    <a href="../cursos/creacion_de_cursos.php">Crear Curso</a>
                     <hr>
                 </div>
                 <div>
-                    <a href="../proyectos/ver_proyectos.php">Ver aulas</a>
+                    <a href="../cursos/creacion_de_aulas.php">Crear Aulas</a>
+                   <hr>
+                </div>
+                <div>
+                    <a href="../cursos/add_estudiante.php">Asignar Estudiantes</a>
                    <hr>
                 </div>
             </div>

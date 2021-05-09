@@ -5,6 +5,7 @@
         <div class="row">
 
         <div class="col-md-6"><br>
+        
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Asiganatura">Asignaturas</option>
                 <option value="Naturales">Naturales</option>
@@ -17,9 +18,18 @@
             <div class="col-md-6"><br>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">Cursos</option>
-                <option value="Santo Domingo">Priimero A</option>
-                <option value="Santo Domingo">Priimero B</option>
-                <option value="Santo Domingo">Priimero C</option>
+                <option value="Santo Domingo">1ro de Bachiller</option>
+                <option value="Santo Domingo">2do de Bachiller</option>
+                <option value="Santo Domingo">3ro de Bachiller</option>
+            </select>
+            </div>
+
+            <div class="col-md-6"><br>
+            <select class="form-control" name="meal_preference" id="meal_preference"    >
+                <option value="Santo Domingo">Aulas</option>
+                <option value="Santo Domingo">Primero A</option>
+                <option value="Santo Domingo">Primero B</option>
+                <option value="Santo Domingo">Primero C</option>
             </select>
             </div>
 
