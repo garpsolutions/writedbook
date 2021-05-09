@@ -5,6 +5,7 @@
         <div class="row">
 
         <div class="col-md-6"><br>
+        
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Asiganatura">Asignaturas</option>
                 <option value="Naturales">Naturales</option>

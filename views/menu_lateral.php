@@ -43,6 +43,12 @@
                     +
                 </div>
             <div class="submenu-ancho docentes-menu-ancho">
+                
+            <div>
+                <a href="../asignaturas/crear_asignatura.php">Crear Asignatura</a>
+                    <hr>
+                </div>
+
                 <div>
                 <a href="../proyectos/nuevo.php">Planificación</a>
                     <hr>
