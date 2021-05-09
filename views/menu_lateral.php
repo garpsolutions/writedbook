@@ -28,11 +28,7 @@
                 <div>
                 <a href="../estudiantes/lista.php">Estudiantes</a>
                    <hr>
-                </div>
-                <div>
-                <a href="../estudiantes/estudiantes.php">Record de Notas</a>
-                   <hr>
-                </div>
+                </div> 
             </div>
         </div>
         <div id="docentes-ancho" class="opciones-menu-ancho row" >
@@ -105,24 +101,6 @@
                 </div>
             </div>
         </div>
-        <div id="promociones-ancho" class="opciones-menu-ancho row">
-            <div class="col-md-10" style="padding-bottom:10px;">
-            <i class="fa fa-graduation-cap"></i> Promociones
-            </div>
-            <div class="col-md-2">
-                +
-            </div>
-            <div class="submenu-ancho promociones-menu-ancho">
-                <div>
-                    <a href="../proyectos/nuevo.php">Crear promocion</a>
-                    <hr>
-                </div>
-                <div>
-                    <a href="../proyectos/ver_proyectos.php">Ver promociones</a>
-                   <hr>
-                </div>
-            </div>
-        </div>
         <div id="nomina-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
             <i class="fa fa-user-secret"></i> RRHH
@@ -132,15 +110,19 @@
             </div>
             <div class="submenu-ancho nomina-menu-ancho">
                 <div>
-                    <a href="../proyectos/nuevo.php">Empleados</a>
+                    <a href="../rrhh/registrar.php">Registrar</a>
                     <hr>
                 </div>
                 <div>
-                    <a href="../proyectos/nuevo.php">Ver empleados</a>
+                    <a href="../rrhh/empleados.php">Empleados</a>
                     <hr>
                 </div>
                 <div>
-                    <a href="../proyectos/ver_proyectos.php">Nomina</a>
+                    <a href="../rrhh/nomina.php">Nomina</a>
+                   <hr>
+                </div>
+                <div>
+                    <a href="../rrhh/solicitud.php">Solicitud</a>
                    <hr>
                 </div>
             </div>
