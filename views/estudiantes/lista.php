@@ -12,22 +12,27 @@ include("../menu_lateral.php");
     </tr>
   </thead>
   <tbody>
+  
     <tr>
       <td scope="row">1</td>
       <td>Mark</td>
       <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a></td>
+    </tr> 
+  
+    
     <tr>
       <td scope="row">2</td>
       <td>Jacob</td>
       <td>Thornton</td>
-      <td>@fat</td>
+      <td><a href="#"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a></td>
+
     </tr>
     <tr>
       <td scope="row">3</td>
-      <td colspan="2">Larry the Bird</td>
+      <td >Larry the Bird</td>
       <td>@twitter</td>
+      <td><a href="#"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a></td>
     </tr>
   </tbody>
 </table>

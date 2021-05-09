@@ -26,6 +26,10 @@
                     <hr>
                 </div>
                 <div>
+                <a href="../estudiantes/lista.php">Estudiantes</a>
+                   <hr>
+                </div>
+                <div>
                 <a href="../estudiantes/estudiantes.php">Record de Notas</a>
                    <hr>
                 </div>
