@@ -68,17 +68,13 @@
                 +
             </div>
             <div class="submenu-ancho asignaturas-menu-ancho">
-                <div>
-                <a href="../proyectos/nuevo.php">Agregar Docentes</a>
-                    <hr>
+            <div>
+                <a href="../docentes/paso_docentes.php">Agregar Docente</a>
+                   <hr>
                 </div>
+                               
                 <div>
-                <a href="../proyectos/nuevo.php">Modificar Docentes</a>
-                    <hr>
-                </div>
-               
-                <div>
-                <a href="../proyectos/ver_proyectos.php">Listas de Docentes</a>
+                <a href="../docentes/listado_de_docentes.php">Listas de Docentes</a>
                    <hr>
                 </div>
             </div>

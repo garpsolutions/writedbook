@@ -2,10 +2,6 @@
 include("../menu_lateral.php");
 ?>
 <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:60%; padding:20px; margin-left:24%;">
-
-<form action="" method="post">
-<h3>Listado de los Docentes</h3> 
-
 <table class="table">
   <thead>
     <tr>
@@ -40,5 +36,4 @@ include("../menu_lateral.php");
     </tr>
   </tbody>
 </table>
-</form>
 </div>
