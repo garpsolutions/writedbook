@@ -131,24 +131,6 @@
                 </div>
             </div>
         </div>
-        <div id="analisis-ancho" class="opciones-menu-ancho row">
-            <div class="col-md-10" style="padding-bottom:10px;">
-            <i class="fa fa-bar-chart"></i> Analisis
-            </div>
-            <div class="col-md-2">
-                +
-            </div>
-            <div class="submenu-ancho analisis-menu-ancho">
-                <div>
-                    <a href="../proyectos/nuevo.php">Competencias</a>
-                    <hr>
-                </div>
-                <div>
-                    <a href="../proyectos/ver_proyectos.php">Desarrollo</a>
-                   <hr>
-                </div>
-            </div>
-        </div>
         <div id="reportes-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
                 <i class="fa fa-list-alt"></i> Reportes
