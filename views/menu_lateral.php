@@ -128,22 +128,10 @@
             </div>
         </div>
         <div id="reportes-ancho" class="opciones-menu-ancho row">
-            <div class="col-md-10" style="padding-bottom:10px;">
+           <a href="../reportes/reportes.php">  <div class="col-md-10" style="padding-bottom:10px;">
                 <i class="fa fa-list-alt"></i> Reportes
             </div>
-            <div class="col-md-2">
-                +
-            </div>
-            <div class="submenu-ancho reportes-menu-ancho">
-                <div>
-                <a href="../proyectos/nuevo.php">Proyectos</a>
-                    <hr>
-                </div>
-                <div>
-                <a href="../proyectos/ver_proyectos.php">Clientes</a>
-                   <hr>
-                </div>
-            </div>
+            </a>    
         </div>
         <div id="contabilidad-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
@@ -167,24 +155,27 @@
         <i class="fa fa-pie-chart"></i>
         Dashboard
         </div>
-        <div id="configuracion-ancho" class="opciones-menu-ancho row">
+        <div id="config-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
-                <i class="fa fa-sliders"></i> Configuracion
+                <i class="fa fa-calculator "></i> Configuracion
             </div>
             <div class="col-md-2">
                 +
             </div>
-            <div class="submenu-ancho configuracion-menu-ancho">
+            <div class="submenu-ancho config-menu-ancho">
                 <div>
-                <a href="../proyectos/nuevo.php">606</a>
+                <a href="../configuracion/informacion.php">Informacion institucional</a>
                     <hr>
                 </div>
                 <div>
-                <a href="../proyectos/ver_proyectos.php">Diario</a>
+                <a href="../proyectos/ver_proyectos.php">Usuarios</a>
+                   <hr>
+                </div>
+                <div>
+                <a href="../proyectos/ver_proyectos.php">Roles</a>
                    <hr>
                 </div>
             </div>
-        
         </div>
     </div>
 
@@ -287,6 +278,9 @@ include("../menu_top.php");
     });
     $("#cursos-ancho").click(function(){
         $(".cursos-menu-ancho").toggle();
+    });
+    $("#config-ancho").click(function(){
+        $(".config-menu-ancho").toggle();
     });
 
 </script>
