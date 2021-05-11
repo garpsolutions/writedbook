@@ -17,7 +17,7 @@ include("../menu_lateral.php");
       <td scope="row">1</td>
       <td>Mark</td>
       <td>Otto</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a></td>
+      <td><a href="detalles_docentes.php"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a></td>
     </tr> 
   
     
