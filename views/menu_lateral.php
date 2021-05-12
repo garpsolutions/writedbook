@@ -118,7 +118,7 @@
                     <hr>
                 </div>
                 <div>
-                    <a href="../rrhh/nomina.php">Nomina</a>
+                    <a href="../rrhh/nomina.php">Nómina</a>
                    <hr>
                 </div>
                 <div>
@@ -157,14 +157,14 @@
         </div>
         <div id="config-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
-                <i class="fa fa-calculator "></i> Configuracion
+                <i class="fa fa-calculator "></i> Configuración
             </div>
             <div class="col-md-2">
                 +
             </div>
             <div class="submenu-ancho config-menu-ancho">
                 <div>
-                <a href="../configuracion/informacion.php">Informacion institucional</a>
+                <a href="../configuracion/informacion.php">Información institucional</a>
                     <hr>
                 </div>
                 <div>

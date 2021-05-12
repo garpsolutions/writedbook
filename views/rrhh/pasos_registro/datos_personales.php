@@ -7,19 +7,19 @@
                 <input class="form-control" type="text" name="" placeholder="Nombre del empleado" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Cedula de identidad" name="" id="" require>
+                <input class="form-control" type="text" placeholder="Cédula de identidad" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <input class="form-control" type="text" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Direccion" name="" id="" require>
+                <input class="form-control" type="text" placeholder="Dirección" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <input class="form-control" type="text" placeholder="Email" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Grado academico" name="" id="" require>
+                <input class="form-control" type="text" placeholder="Grado académico" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <input class="form-control" type="text" placeholder="Salario" name="" id="" require>

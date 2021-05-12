@@ -31,7 +31,6 @@ include("../menu_lateral.php");
             <div class="col-md-12"><br>
                 <button class="btn btn-warning">Editar</button>
                 <button class="btn btn-danger">Guardar</button>
-
             </div>
             
         </form>

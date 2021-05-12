@@ -5,10 +5,10 @@ include("../menu_lateral.php");
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
       <th scope="col">Curso</th>
-      <th scope="col">Accion</th>
+      <th scope="col">Acción</th>
     </tr>
   </thead>
   <tbody>

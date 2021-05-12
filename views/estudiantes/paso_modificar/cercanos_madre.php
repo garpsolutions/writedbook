@@ -10,10 +10,10 @@
                 <input class="form-control campo" type="text" placeholder="Parentesco" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control campo" type="Text" placeholder="Direccion" name="" id="" require>
+                <input class="form-control campo" type="Text" placeholder="Dirección" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-            <label for="">Telefono</label>
+            <label for="">Teléfono</label>
                 <input class="form-control campo" type="Text" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>

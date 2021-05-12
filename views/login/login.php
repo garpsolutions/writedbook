@@ -27,7 +27,7 @@
                                 <input class="form-control" type="password" name="" id="" placeholder="Contraseña">
                             </div>
                             <div class="col-md-12"><br><br>
-                                <button class="btn col-md-12" id="init"> Iniciar seccion</button>
+                                <a href="../home/index.php" class="btn col-md-12" id="init"> Iniciar seccion</a>
                             </div>
                         </form>
                     </div>

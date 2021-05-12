@@ -64,7 +64,7 @@
             </div>
             <div class="col-md-12"><br>
             <label for="">Motivo de salida</label>
-            <textarea class="form-control campo" placeholder="Razon de salida de la institucion anterior" name="" id="" cols="10" rows="4"></textarea>
+            <textarea class="form-control campo" placeholder="Razón de salida de la institución anterior" name="" id="" cols="10" rows="4"></textarea>
             </div>
             <div class="col-md-6"><br>
                 <a href="detalles_estudiante.php" class="btn btn-secondary " id="">Cancelar</a>

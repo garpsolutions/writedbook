@@ -64,7 +64,7 @@
             </div>
             <div class="col-md-12"><br>
             <label for="">Motivo de salida</label>
-            <textarea class="form-control" placeholder="Razon de salida de la institucion anterior" name="" id="" cols="10" rows="4"></textarea>
+            <textarea class="form-control" placeholder="Razón de salida de la institución anterior" name="" id="" cols="10" rows="4"></textarea>
             </div>
             <div class="col-md-12"><br>
                 <a  style="float: right;"

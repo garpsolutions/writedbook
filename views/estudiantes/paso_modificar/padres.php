@@ -10,11 +10,11 @@
                 <input class="form-control campo" type="Text" placeholder="Nombre de la madre" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <label for="">Telefono de la madre</label>
+                <label for="">Teléfono de la madre</label>
                 <input class="form-control campo" type="Text" placeholder="000-000-000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <label for="">Telefono de la padre</label>
+                <label for="">Teléfono de la padre</label>
                 <input class="form-control campo" type="text" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
@@ -27,7 +27,7 @@
             </div>
 
             <div  class="col-md-12"><br>
-                <textarea class="form-control campo"  placeholder="Direccion" name="" id="" cols="30" rows="4"></textarea>
+                <textarea class="form-control campo"  placeholder="Dirección" name="" id="" cols="30" rows="4"></textarea>
             </div>
             <div class="col-md-6"><br>
                 <a   class="btn btn-danger " id="anterior1">Anterior</a>
