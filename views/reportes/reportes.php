@@ -5,7 +5,7 @@ include("../menu_lateral.php");
 <div id="perfil_estudiante" class="row" >
     <div style="background-color: white; width:600px; margin-top:50px;padding:40px; margin-left:8%;">
     <h3>Reportes</h3>
-     <a href="reporte_estudiantes.php"> 
+     <a href="reporte_estudiantes.php" style="text-decoration: none;"> 
         <div class="reporte bg-secondary">
             Reporte de estudiantes 
         </div>

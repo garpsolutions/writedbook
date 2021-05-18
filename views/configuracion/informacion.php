@@ -4,7 +4,7 @@ include("../menu_lateral.php");
 <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:60%; padding:20px; margin-left:300px;">
     <div>
     <form action="" method="post">
-      <h5>Informacion del instituto</h5> 
+      <h5>Información del instituto</h5> 
         <div class="row">
             <div class="col-md-6"><br>
                 <input class="form-control" type="text" name="" placeholder="Nombre completo" id="" require>
@@ -13,7 +13,7 @@ include("../menu_lateral.php");
                 <input class="form-control" type="text" placeholder="RNC" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Direccion" name="" id="" require>
+                <input class="form-control" type="text" placeholder="Dirección" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <input class="form-control" type="text" placeholder="Email" name="" id="" require>
