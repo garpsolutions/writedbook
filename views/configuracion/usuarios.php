@@ -19,13 +19,13 @@ include("../menu_lateral.php");
       <th scope="row">Freddy Miguel</th>
       <td>FreddyMP</td>
       <td>Admin</td>
-      <td><button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></button ><button style="margin-left:5px"  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+      <td><button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></button ><button data-bs-toggle="modal" data-bs-target="#exampleModal2" style="margin-left:5px"  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
     </tr>
     <tr>
       <th scope="row">Neitan Garcia</th>
       <td>NeitanMP</td>
       <td>Admin</td>
-      <td><button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></button ><button style="margin-left:5px"class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+      <td><button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></button ><button  data-bs-toggle="modal" data-bs-target="#exampleModal2" style="margin-left:5px"class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
     </tr>
   </tbody>
 </table>
@@ -38,7 +38,7 @@ include("../menu_lateral.php");
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Historial del usuario</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -46,7 +46,6 @@ include("../menu_lateral.php");
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -56,15 +55,15 @@ include("../menu_lateral.php");
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel2">Eliminar usuario</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        Seguro que desea eliminar este usuario?
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
       </div>
     </div>
   </div>
