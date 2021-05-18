@@ -168,7 +168,7 @@
                     <hr>
                 </div>
                 <div>
-                <a href="../proyectos/ver_proyectos.php">Usuarios</a>
+                <a href="../configuracion/usuarios.php">Usuarios</a>
                    <hr>
                 </div>
                 <div>

@@ -22,10 +22,28 @@ include("../menu_lateral.php");
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Freddy:</strong> Reporta a SK Danger
+            <strong>Freddy:</strong> Reporta a SK Danger <div style="float: right;" data-bs-toggle="modal" data-bs-target="#exampleModal">Leer</div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </div>  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mensaje completo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Esto es un ejemplo para leer un mensaje de texto mendiante writedbook
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Responder</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
  
