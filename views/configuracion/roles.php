@@ -22,4 +22,15 @@ include("../menu_lateral.php");
         $("#rol").hide(300);
         $("#permisos").show();    
     });
+    $("#anterior1").click(function(){
+        $("#rol").animate({
+            opacity: '1'
+        });
+
+        $("#permisos").animate({
+      opacity: '0.5',
+    });
+        $("#permisos").hide(300);
+        $("#rol").show();    
+    });
 </script>
