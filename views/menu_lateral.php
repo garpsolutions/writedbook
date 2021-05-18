@@ -172,7 +172,7 @@
                    <hr>
                 </div>
                 <div>
-                <a href="../proyectos/ver_proyectos.php">Roles</a>
+                <a href="../configuracion/roles.php">Roles</a>
                    <hr>
                 </div>
             </div>
