@@ -210,19 +210,69 @@ PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
 ");
 //Tabla de relaciones asignaturas, cursos y periodos(acp)
 $conexion->query("CREATE TABLE $namedb.asistencia
-( `id_asistencia` INT NOT NULL AUTO_INCREMENT ,
-`id_asignatura` INT(10) NULL , 
-`id_curso` INT(10) NULL,
-`id_aula` INT(10) NULL,
-`id_periodo` VARCHAR(100) NULL , 
-`estado` VARCHAR(100) NULL , 
+(`id_asistencia` INT NOT NULL AUTO_INCREMENT ,
+`id_asignatura` INT(10) NULL, 
+`presente_o_no` VARCHAR(100) NULL, 
+`estado` VARCHAR(100) NULL, 
 `creado_por` VARCHAR(100) NOT NULL , 
 `fecha_creacion` TIMESTAMP NOT NULL , 
-PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
+`id_estudiante` VARCHAR(100) NULL , 
+PRIMARY KEY (`id_asistencia`)) ENGINE = InnoDB;
 ");
-
-
-
-    header("location:../views/creador_user.php?empresa=$namedb");
-    
+//Tabla de roles
+$conexion->query("CREATE TABLE $namedb.roles
+(`id_rol` INT NOT NULL AUTO_INCREMENT ,
+`nombre` VARCHAR(50) NULL, 
+`estado` VARCHAR(100) NULL, 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_rol`)) ENGINE = InnoDB;
+");
+//tabla de permisos de roles
+$conexion->query("CREATE TABLE $namedb.permisos
+(`id_permisos` INT NOT NULL AUTO_INCREMENT ,
+`id_rol` INT(10) NULL, 
+`estudiantes` VARCHAR(1) NOT NULL DEFAULT '1',
+`estudiantes_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
+`estudiantes_ver` VARCHAR(1) NOT NULL DEFAULT '1',
+`estudiantes_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`docentes_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
+`docentes` VARCHAR(1) NOT NULL DEFAULT '1',
+`docentes_ver` VARCHAR(1) NOT NULL DEFAULT '1',
+`docentes_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`asignaturas` VARCHAR(1) NOT NULL DEFAULT '1',
+`asignaturas_ver` VARCHAR(1) NOT NULL DEFAULT '1',
+`asignaturas_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
+`asignaturas_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`cursos` VARCHAR(1) NOT NULL DEFAULT '1',
+`cursos_ver` VARCHAR(1) NOT NULL DEFAULT '1',
+`cursos_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
+`cursos_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`aulas` VARCHAR(1) NOT NULL DEFAULT '1',
+`aulas_ver` VARCHAR(1) NOT NULL DEFAULT '1',
+`aulas_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
+`aulas_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`empleados` VARCHAR(1) NOT NULL DEFAULT '1',
+`empleados_ver` VARCHAR(1) NOT NULL DEFAULT '1',
+`empleados_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`empleados_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
+`nomina` VARCHAR(1) NOT NULL DEFAULT '1',
+`nomina_ver` VARCHAR(1) NOT NULL DEFAULT '1',
+`nomina_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
+`nomina_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`reportes` VARCHAR(1) NOT NULL DEFAULT '1',
+`contabilidad` VARCHAR(1) NOT NULL DEFAULT '1',
+`configuracion` VARCHAR(1) NOT NULL DEFAULT '1',
+`usuarios` VARCHAR(1) NOT NULL DEFAULT '1',
+`usuarios_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`usuarios_eliminar` VARCHAR(1) NOT NULL DEFAULT '1',
+`informacion` VARCHAR(1) NOT NULL DEFAULT '1',
+`informacion_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`estado` VARCHAR(100) NULL, 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+`id_estudiante` VARCHAR(100) NULL , 
+PRIMARY KEY (`id_permisos`)) ENGINE = InnoDB;
+");
+    header("location:../views/creador_user.php?empresa=$namedb"); 
 ?>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+    if(isset($_SESSION['user'])){
+?>
 <div id="menu_lateral">
     <!-- Menu ancho -->
     <div id="menu-ancho">
@@ -284,3 +288,9 @@ include("../menu_top.php");
     });
 
 </script>
+<?php
+}
+else{
+    header('location:../login/login.php');
+}
+?>
