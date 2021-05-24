@@ -37,33 +37,45 @@ include("../menu_lateral.php");
             </div>
 
             <div class="col-md-6"><br>
-            <select class="form-control" name="meal_preference" id="meal_preference"    >
-                <option value="Santo Domingo">ID del Estudiante</option>
-                <option value="Santo Domingo"># 01</option>
-                <option value="Santo Domingo"># 02</option>
-                <option value="Santo Domingo"># 03</option>
-                <option value="Santo Domingo"># 04</option>
-            </select>
-            </div>
-
-            <div class="col-md-6"><br>
                 <input class="form-control" type="text" placeholder="Encargado del Curso" name="" id="" require>
             </div>
-            <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Nombre del Estudiante" name="" id="" require>
-            </div>
-            <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Apellido de Estudiante" name="" id="" require>
-            </div>
-            <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Correo del Estudiante" name="" id="" require>
-            </div>
-            <div class="col-md-6"><br>
-            <select class="form-control" name="meal_preference" id="meal_preference"    >
-                <option value="Santo Domingo">Presente</option>
-                <option value="Santo Domingo">Ausente</option>
-            </select>
-            </div>
+
+            <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:70%; padding:20px; margin-left:24%;">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Curso</th>
+      <th scope="col">Accion</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr>
+      <td scope="row">1</td>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td><a href="detalles_docentes.php"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a></td>
+    </tr> 
+  
+    
+    <tr>
+      <td scope="row">2</td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td><a href="#"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a></td>
+
+    </tr>
+    <tr>
+      <td scope="row">3</td>
+      <td >Larry the Bird</td>
+      <td>@twitter</td>
+      <td><a href="#"><button class="btn btn-primary"><i class="fa fa-eye"></i></button></a></td>
+    </tr>
+  </tbody>
+</table>
+           
             <div class="col-md-12"><br>
                 <button class="btn btn-success">Guardar</button>
             </div>
