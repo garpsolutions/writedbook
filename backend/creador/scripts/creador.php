@@ -208,6 +208,19 @@ $conexion->query("CREATE TABLE $namedb.relaciones_acp
 `fecha_creacion` TIMESTAMP NOT NULL , 
 PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
 ");
+//Tabla de relaciones asignaturas, cursos y periodos(acp)
+$conexion->query("CREATE TABLE $namedb.asistencia
+( `id_asistencia` INT NOT NULL AUTO_INCREMENT ,
+`id_asignatura` INT(10) NULL , 
+`id_curso` INT(10) NULL,
+`id_aula` INT(10) NULL,
+`id_periodo` VARCHAR(100) NULL , 
+`estado` VARCHAR(100) NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
+");
+
 
 
     header("location:../views/creador_user.php?empresa=$namedb");
