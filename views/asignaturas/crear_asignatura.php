@@ -34,7 +34,7 @@ include("../menu_lateral.php");
             
         <div class="col-md-6"><br>
         <label for="">
-                    Seleccione Rango Educativo</label>
+                    Seleccione Nivel Educativo</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Asiganatura">Educaion Inicial</option>
                 <option value="Naturales">Educacion Basica</option>
@@ -44,27 +44,7 @@ include("../menu_lateral.php");
             </select>
             </div>
 
-            <div class="col-md-12"><br>
-            <label for="">Seleccione los Grados donde se Impartira La Materia</label>
-            <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">1ro de Bachiller</label>
-            </div> 
-            <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">2do de Bachiller</label>
-            </div>
-            <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">3ro de Bachiller</label>
-            </div>
-            <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">4to de Bachiller</label>
-            </div>
-            </div>
-
-            <div class="col-md-12"><br>
+           <div class="col-md-12"><br>
                 <button class="btn btn-success">Guardar</button>
             </div>
         
