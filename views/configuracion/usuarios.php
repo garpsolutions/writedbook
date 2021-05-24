@@ -1,5 +1,6 @@
 <?php 
-include("../menu_lateral.php"); 
+include("../menu_lateral.php");
+$usuarios_tb = $conexion->query("SELECT * FROM $institucion.usuarios");
 ?>  
 <link rel="stylesheet" href="../../css/reporte.css">
 <div id="perfil_estudiante" class="row" >
@@ -15,18 +16,18 @@ include("../menu_lateral.php");
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">Freddy Miguel</th>
-      <td>FreddyMP</td>
-      <td>Admin</td>
-      <td><button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></button ><button data-bs-toggle="modal" data-bs-target="#exampleModal2" style="margin-left:5px"  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
-    </tr>
-    <tr>
-      <th scope="row">Neitan Garcia</th>
-      <td>NeitanMP</td>
-      <td>Admin</td>
-      <td><button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></button ><button  data-bs-toggle="modal" data-bs-target="#exampleModal2" style="margin-left:5px"class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
-    </tr>
+  <?php
+    while($usuarios = $usuarios_tb->fetch_assoc()){
+      ?>
+        <tr>
+          <th scope="row"><?php echo $usuarios["nombre"] ?></th>
+          <td><?php echo $usuarios["user_nombre"] ?></td>
+          <td><?php echo $usuarios["rol"] ?></td>
+          <td><button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></button ><button data-bs-toggle="modal" data-bs-target="#exampleModal2" style="margin-left:5px"  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+        </tr>
+      <?php
+    }
+  ?>
   </tbody>
 </table>
     <a href="nuevo_user.php"><button class="btn btn-secondary">Nuevo usuario</button> </a>
@@ -50,7 +51,6 @@ include("../menu_lateral.php");
     </div>
   </div>
 </div>
-
 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
