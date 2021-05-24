@@ -2,11 +2,11 @@
 include("../menu_lateral.php");
 ?>
 
-<!-- Este es el Filtro de la tabla de asiganaturas -->
+<!-- Este es el Filtro de la tabla de Cursos -->
 <div id="form-estudiantes" style="background-color: white; margin-top:30px; width:83%; padding:20px; margin-left:300px;">
     <div>
     <form action="" method="post">
-      <h3> Listado de Docentes </h3> 
+      <h3> Listado de Cursos</h3> 
         <div class="row">
 
 
