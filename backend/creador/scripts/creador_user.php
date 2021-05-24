@@ -11,6 +11,6 @@
     //creacion del rol admin
     $conexion->query("INSERT INTO $empresa.roles (nombre, estado, creado_por) VALUES ('admin_sys', 'activo','System')");
     //creacion del rol admin
-    $conexion->query("INSERT INTO $empresa.permisos (id_rol, creador_por) VALUES (1,'System')");
+    $conexion->query("INSERT INTO $empresa.permisos (id_rol, rol, creado_por) VALUES ('1','admin','System')");
     header("location:../../../views/login/login.php");
 ?>

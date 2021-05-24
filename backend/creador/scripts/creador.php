@@ -230,7 +230,7 @@ PRIMARY KEY (`id_rol`)) ENGINE = InnoDB;
 //tabla de permisos de roles
 $conexion->query("CREATE TABLE $namedb.permisos
 (`id_permisos` INT NOT NULL AUTO_INCREMENT ,
-`id_rol` INT(10)  NOT NULL DEFAULT '1', 
+`id_rol` VARCHAR(10)  NOT NULL DEFAULT '1', 
 `rol` VARCHAR(100) NOT NULL DEFAULT 'admin', 
 `estudiantes` VARCHAR(1) NOT NULL DEFAULT '1',
 `estudiantes_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
