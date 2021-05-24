@@ -59,6 +59,11 @@ session_start();
                 </div>
 
                 <div>
+                <a href="../asignaturas/lista_de_asignaturas.php">Lista de Asignaturas</a>
+                   <hr>
+                </div>
+
+                <div>
                 <a href="../asignaturas/asistencia.php">Registrar Asistencias</a>
                    <hr>
                 </div>
