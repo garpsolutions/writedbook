@@ -42,7 +42,25 @@
 </html>
 <?php  
 if(isset($_GET["credenciales"])){
-    ?>
+    if($_GET["credenciales"]==1){
+        ?>
+            <script>
+                $(document).ready(function(){
+                Swal.fire({
+                title: 'La institución no existe',
+                showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+            }
+    });
+        });
+        </script>
+        <?php 
+    }
+    if($_GET["credenciales"]==0){
+        ?>
         <script>
         $(document).ready(function(){
             Swal.fire({
@@ -57,5 +75,6 @@ if(isset($_GET["credenciales"])){
         });
         </script>
     <?php
+    }
 }
 ?>

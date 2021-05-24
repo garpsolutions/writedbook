@@ -221,7 +221,6 @@ PRIMARY KEY (`id_asistencia`)) ENGINE = InnoDB;
 $conexion->query("CREATE TABLE $namedb.roles
 (`id_rol` INT NOT NULL AUTO_INCREMENT ,
 `nombre` VARCHAR(50) NULL, 
-`estado` VARCHAR(100) NULL, 
 `creado_por` VARCHAR(100) NOT NULL , 
 `fecha_creacion` TIMESTAMP NOT NULL , 
 PRIMARY KEY (`id_rol`)) ENGINE = InnoDB;
@@ -229,7 +228,8 @@ PRIMARY KEY (`id_rol`)) ENGINE = InnoDB;
 //tabla de permisos de roles
 $conexion->query("CREATE TABLE $namedb.permisos
 (`id_permisos` INT NOT NULL AUTO_INCREMENT ,
-`id_rol` INT(10) NULL, 
+`id_rol` INT(10)  NOT NULL DEFAULT '1', 
+`rol` VARCHAR(100) NOT NULL DEFAULT 'admin', 
 `estudiantes` VARCHAR(1) NOT NULL DEFAULT '1',
 `estudiantes_agregar` VARCHAR(1) NOT NULL DEFAULT '1',
 `estudiantes_ver` VARCHAR(1) NOT NULL DEFAULT '1',

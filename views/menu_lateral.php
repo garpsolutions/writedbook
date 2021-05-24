@@ -1,6 +1,11 @@
 <?php
 session_start();
     if(isset($_SESSION['user'])){
+    include("../../backend/conexion/cone.php"); 
+    $institucion = $_SESSION['institucion'];
+    $rol =  $_SESSION['rol'];
+    $permisos= $conexion->query("SELECT * FROM $institucion.permisos where rol = '$rol'");
+    $permisos_user = $permisos->fetch_assoc();
 ?>
 <div id="menu_lateral">
     <!-- Menu ancho -->
@@ -17,6 +22,9 @@ session_start();
                 </div>  
             </div>
         </div>
+<?php
+if($permisos_user['estudiantes']==1){
+?>
         <div id="estudiantes-ancho" class="opciones-menu-ancho row">
                 <div class="col-md-10" style="padding-bottom:10px;">
                     <i class="fa fa-folder"></i> Estudiantes 
@@ -35,6 +43,11 @@ session_start();
                 </div> 
             </div>
         </div>
+<?php
+    }
+  
+if($permisos_user['asignaturas']==1){
+?>
         <div id="docentes-ancho" class="opciones-menu-ancho row" >
             <div class="col-md-10" style="padding-bottom:10px;">
             <i class="fa fa-address-book"></i> Asignaturas
@@ -69,6 +82,10 @@ session_start();
                 </div>
             </div>
         </div>
+<?php
+    }
+if($permisos_user['docentes']==1){
+?>
         <div id="asignaturas-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
             <i class="fa fa-users"></i> Docentes
@@ -88,6 +105,10 @@ session_start();
                 </div>
             </div>
         </div>
+<?php
+    }
+if($permisos_user['cursos']==1){
+?>
         <div id="cursos-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
             <i class="fa fa-codepen"></i> Cursos
@@ -110,6 +131,10 @@ session_start();
                 </div>
             </div>
         </div>
+<?php
+    }
+if($permisos_user['nomina']==1){
+?>
         <div id="nomina-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
             <i class="fa fa-user-secret"></i> RRHH
@@ -122,10 +147,16 @@ session_start();
                     <a href="../rrhh/registrar.php">Registrar</a>
                     <hr>
                 </div>
-                <div>
-                    <a href="../rrhh/empleados.php">Empleados</a>
-                    <hr>
-                </div>
+                <?php
+                    if($permisos_user['empleados']==1){
+                ?>
+                    <div>
+                        <a href="../rrhh/empleados.php">Empleados</a>
+                        <hr>
+                    </div>
+                <?php
+                    }
+                ?>
                 <div>
                     <a href="../rrhh/nomina.php">Nómina</a>
                    <hr>
@@ -136,12 +167,20 @@ session_start();
                 </div>
             </div>
         </div>
+<?php
+    }
+if($permisos_user['reportes']==1){
+?>
         <div id="reportes-ancho" class="opciones-menu-ancho row">
            <a href="../reportes/reportes.php">  <div class="col-md-10" style="padding-bottom:10px;">
                 <i class="fa fa-list-alt"></i> Reportes
             </div>
             </a>    
         </div>
+<?php
+    }
+if($permisos_user['contabilidad']==1){
+?>
         <div id="contabilidad-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
                 <i class="fa fa-calculator "></i> Contabilidad
@@ -160,10 +199,16 @@ session_start();
                 </div>
             </div>
         </div>
+<?php
+}
+?>
         <div class="opciones-menu-ancho">
         <i class="fa fa-pie-chart"></i>
         Dashboard
         </div>
+<?php
+if($permisos_user['configuracion']==1){
+?>
         <div id="config-ancho" class="opciones-menu-ancho row">
             <div class="col-md-10" style="padding-bottom:10px;">
                 <i class="fa fa-calculator "></i> Configuración
@@ -186,6 +231,9 @@ session_start();
                 </div>
             </div>
         </div>
+<?php
+    }
+?>
     </div>
 
 
