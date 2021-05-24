@@ -22,6 +22,9 @@ include("../menu_lateral.php");
                     <div> <br>
                         <a href="historial.php"><button class="btn btn form-control" style="background-color: rgb(11, 11, 53);color:white"> Historial estudiantil</button></a>
                     </div>
+                    <div> <br>
+                        <a href="historial.php"><button class="btn btn form-control" style="background-color: rgb(11, 11, 53);color:white">Reportes de insidencia </button></a>
+                    </div>
                     <div><br>
                         <button class="btn btn form-control" id="informacion" style="background-color: rgb(11, 11, 53);color:white">Información</button>
                     </div>

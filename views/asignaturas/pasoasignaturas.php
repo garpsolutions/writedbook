@@ -12,7 +12,6 @@ include("../menu_lateral.php");
     ?>
 </div>
 
-
 <script>
 //formularios inicialmente ocultos
     $("#notas").hide();
