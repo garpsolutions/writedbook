@@ -7,7 +7,7 @@ include("../menu_lateral.php");
       <form action="../../scripts/roles/agregar.php" method="post">
         <div class="row">
             <div class="col-md-16"><br>
-                <input class="form-control" type="text" name="nombre" placeholder="Nombre del rol" id="" require>
+                <input class="form-control" type="text" name="nombre" placeholder="Nombre del rol" id="" required>
             </div>
             <div class="col-md-6"><br>
                <button class="btn btn-danger form-control">Cancelar</button>

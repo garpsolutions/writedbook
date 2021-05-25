@@ -122,11 +122,22 @@ $conexion->query(" CREATE TABLE $namedb.solicitud_empleo
  `fecha_creacion` TIMESTAMP NOT NULL , 
  PRIMARY KEY (`id_solicitud`)) ENGINE = InnoDB;
 ");
-//Tabla de docentes
 
+
+//Tabla de docentes
 $conexion->query(" CREATE TABLE $namedb.docentes
 ( `id_docente` INT NOT NULL AUTO_INCREMENT , 
 `nombre_docente` VARCHAR(200) NOT NULL , 
+`identificacion` VARCHAR(200) NOT NULL,
+`lugar_nacimiento` VARCHAR(200) NOT NULL , 
+`direccion` VARCHAR(200) NOT NULL , 
+`fecha_nacimiento` VARCHAR(200) NOT NULL ,
+`estado_civil` VARCHAR(200) NOT NULL , 
+`nivel_academico` VARCHAR(200) NOT NULL , 
+`carrera` VARCHAR(200) NOT NULL , 
+`materia` VARCHAR(200) NOT NULL , 
+`experiencia` VARCHAR(200) NOT NULL, 
+`experiencia_grado` VARCHAR(200) NOT NULL , 
 `apellido` VARCHAR(200) NOT NULL , 
 `telefono` VARCHAR(200) NOT NULL , 
 `titulo` VARCHAR(100) NOT NULL , 
@@ -135,6 +146,8 @@ $conexion->query(" CREATE TABLE $namedb.docentes
 `fecha_creacion` TIMESTAMP NOT NULL ,
  PRIMARY KEY (`id_docente`)) ENGINE = InnoDB;
 ");
+
+
 //Tabla de asignaturas
 $conexion->query("CREATE TABLE $namedb.asignaturas 
 ( `id_asignatura` INT NOT NULL AUTO_INCREMENT , 
@@ -193,6 +206,45 @@ $conexion->query("CREATE TABLE $namedb.periodos
 `fecha_creacion` TIMESTAMP NOT NULL , 
 PRIMARY KEY (`id_periodo`)) ENGINE = InnoDB;
 ");
+//Tabla de informacion institucional
+$conexion->query("CREATE TABLE $namedb.informacion
+( `id_informacion` INT NOT NULL AUTO_INCREMENT,
+`nombre` VARCHAR(100) NULL ,
+`rnc` VARCHAR(100) NULL ,
+`direccion` TEXT() NULL ,  
+`email` VARCHAR(100) NULL , 
+`telefono` VARCHAR(100) NULL , 
+`distrito` VARCHAR(100) NULL , 
+`logo` VARCHAR(100) NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_informacion`)) ENGINE = InnoDB;
+");
+
+//Tabla de cursos
+$conexion->query("CREATE TABLE $namedb.cursos
+( `id_curso` INT NOT NULL AUTO_INCREMENT ,
+`nombre` varchar(50) NULL , 
+`modalidad` VARCHAR(100) NULL,
+`tanda` varchar(100) NULL,
+`estado` VARCHAR(100) NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
+");
+
+//Tabla de aulas
+$conexion->query("CREATE TABLE $namedb.aulas
+( `id_aula` INT NOT NULL AUTO_INCREMENT ,
+`nombre` varchar(50) NULL , 
+`curso` VARCHAR(100) NULL,
+`seccion` varchar(100) NULL,
+`docente` varchar(100) NULL,
+`estado` VARCHAR(100) NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
+");
 
 //Tabla de relaciones asignaturas, cursos y periodos(acp)
 $conexion->query("CREATE TABLE $namedb.relaciones_acp
@@ -206,6 +258,7 @@ $conexion->query("CREATE TABLE $namedb.relaciones_acp
 `fecha_creacion` TIMESTAMP NOT NULL , 
 PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
 ");
+
 //Tabla de relaciones asignaturas, cursos y periodos(acp)
 $conexion->query("CREATE TABLE $namedb.asistencia
 (`id_asistencia` INT NOT NULL AUTO_INCREMENT ,
