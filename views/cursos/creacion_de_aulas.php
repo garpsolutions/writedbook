@@ -1,7 +1,7 @@
 <?php 
 include("../menu_lateral.php"); 
 ?>
-<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:83%; padding:20px; margin-left:300px;">
+<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:70%; padding:20px; margin-left:300px;">
     <div>
     <form action="" method="post">
       <h3> Datos del Aula </h3> 
