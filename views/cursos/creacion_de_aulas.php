@@ -8,7 +8,7 @@ include("../menu_lateral.php");
         <div class="row">
 
         <div class="col-md-3"><br>
-            <label for="">Selecciona el Curso</label>
+            <label for="">Curso</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">1ro Bachiller</option>
                 <option value="Santo Domingo">2do Bachiller</option>
@@ -17,7 +17,7 @@ include("../menu_lateral.php");
             </div>
 
             <div class="col-md-3"><br>
-            <label for="">Selecciona la Seccion</label>
+            <label for="">Seccion</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">A</option>
                 <option value="Santo Domingo">B</option>
@@ -26,7 +26,7 @@ include("../menu_lateral.php");
             </div>
 
             <div class="col-md-3"><br>
-            <label for="">Selecciona el Docente Encargado</label>
+            <label for="">Docente Encargado</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">Josias Matos</option>
                 <option value="Santo Domingo">Wilfre Valdez</option>
@@ -36,7 +36,7 @@ include("../menu_lateral.php");
             </div>
 
             <div class="col-md-3"><br>
-            <label for="">Selecciona el Rango de Edad</label>
+            <label for="">Rango de Edad</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">8 años - 13 años </option>
                 <option value="Santo Domingo">14 años - 16 años</option>
@@ -45,7 +45,7 @@ include("../menu_lateral.php");
             </select>
             </div> 
 
-  <div id="form-estudiantes" style="background-color: white; margin-top:px; width:100%; padding:20px; margin-left:%;">   
+  <div id="form-estudiantes" style="background-color: white; height:400px; margin-top:25px; width:100%; padding:20px; overflow:scroll">   
   <h3> Asignar Estudiantes </h3>        
 <table class="table">
   <thead>
@@ -66,7 +66,63 @@ include("../menu_lateral.php");
       <td>8vo</td>
       <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
     </tr> 
-  
+    <tr>
+      <td scope="row">Wilfred</td>
+      <td>Mateo</td>
+      <td>12</td>
+      <td>8vo</td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+    </tr>
+    <tr>
+      <td scope="row">Wilfred</td>
+      <td>Mateo</td>
+      <td>12</td>
+      <td>8vo</td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+    </tr>
+    <tr>
+      <td scope="row">Wilfred</td>
+      <td>Mateo</td>
+      <td>12</td>
+      <td>8vo</td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+    </tr>
+    <tr>
+      <td scope="row">Wilfred</td>
+      <td>Mateo</td>
+      <td>12</td>
+      <td>8vo</td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+    </tr>
+    <tr>
+      <td scope="row">Wilfred</td>
+      <td>Mateo</td>
+      <td>12</td>
+      <td>8vo</td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+    </tr>
+    <tr>
+      <td scope="row">Wilfred</td>
+      <td>Mateo</td>
+      <td>12</td>
+      <td>8vo</td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+    </tr>
+    <tr>
+      <td scope="row">Wilfred</td>
+      <td>Mateo</td>
+      <td>12</td>
+      <td>8vo</td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+    </tr>
+    <tr>
+      <td scope="row">Wilfred</td>
+      <td>Mateo</td>
+      <td>12</td>
+      <td>8vo</td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+    </tr>
+
     
     <tr>
       <td scope="row">Joisas</td>
