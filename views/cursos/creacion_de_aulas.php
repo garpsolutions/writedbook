@@ -1,7 +1,7 @@
 <?php 
 include("../menu_lateral.php"); 
 ?>
-<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:60%; padding:20px; margin-left:300px;">
+<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:83%; padding:20px; margin-left:300px;">
     <div>
     <form action="" method="post">
       <h3> Datos del Aula </h3> 
@@ -43,13 +43,16 @@ include("../menu_lateral.php");
                 <option value="Santo Domingo">16 años - 18 años</option>
                 <option value="Santo Domingo">18 años - 20 años</option>
             </select>
-            </div>
-            
+            </div> 
+
+  <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:100%; padding:20px; margin-left:%;">   
+  <h3> Asignar Estudiantes </h3> <br>       
 <table class="table">
   <thead>
     <tr>
       <th scope="col">Nombre</th>
       <th scope="col">Apellido</th>
+      <th scope="col">Edad</th>
       <th scope="col">Curso Anterior</th>
       <th scope="col">Accion</th>
     </tr>
@@ -59,6 +62,7 @@ include("../menu_lateral.php");
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
+      <td>12</td>
       <td>8vo</td>
       <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
     </tr> 
@@ -67,6 +71,7 @@ include("../menu_lateral.php");
     <tr>
       <td scope="row">Joisas</td>
       <td>Mariano</td>
+      <td>13</td>
       <td>8vo</td>
       <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
 
@@ -74,6 +79,7 @@ include("../menu_lateral.php");
     <tr>
       <td scope="row">Fredy</td>
       <td >Cornelio</td>
+      <td>12</td>
       <td>8vo</td>
       <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
     </tr>

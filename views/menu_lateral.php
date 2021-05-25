@@ -126,7 +126,7 @@ if($permisos_user['cursos']==1){
                    <hr>
                 </div>
                 <div>
-                    <a href="../cursos/add_estudiante.php">Asignar Estudiantes</a>
+                    <a href="../cursos/add_estudiante.php">Listado de Aulas</a>
                    <hr>
                 </div>
             </div>
