@@ -141,7 +141,11 @@ include("../menu_lateral.php");
     </tr>
   </tbody>
 </table>
-</div>                        
+</div>   
+
+<br>   
+<br> 
+
             <div class="col-md-12">
                 <button class="btn btn-success">Guardar</button>
             </div>
