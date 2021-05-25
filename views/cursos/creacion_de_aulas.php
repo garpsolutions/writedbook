@@ -1,13 +1,13 @@
 <?php 
 include("../menu_lateral.php"); 
 ?>
-<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:83%; padding:20px; margin-left:300px;">
+<div id="form-estudiantes" style="background-color: white; margin-top:10px; width:83%; padding:20px; margin-left:300px;">
     <div>
     <form action="" method="post">
       <h3> Datos del Aula </h3> 
         <div class="row">
 
-        <div class="col-md-6"><br>
+        <div class="col-md-3"><br>
             <label for="">Selecciona el Curso</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">1ro Bachiller</option>
@@ -16,7 +16,7 @@ include("../menu_lateral.php");
             </select>
             </div>
 
-            <div class="col-md-6"><br>
+            <div class="col-md-3"><br>
             <label for="">Selecciona la Seccion</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">A</option>
@@ -25,7 +25,7 @@ include("../menu_lateral.php");
             </select>
             </div>
 
-            <div class="col-md-6"><br>
+            <div class="col-md-3"><br>
             <label for="">Selecciona el Docente Encargado</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">Josias Matos</option>
@@ -35,7 +35,7 @@ include("../menu_lateral.php");
             </select>
             </div>
 
-            <div class="col-md-6"><br>
+            <div class="col-md-3"><br>
             <label for="">Selecciona el Rango de Edad</label>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">8 años - 13 años </option>
