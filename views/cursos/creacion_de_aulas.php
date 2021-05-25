@@ -45,8 +45,8 @@ include("../menu_lateral.php");
             </select>
             </div> 
 
-  <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:100%; padding:20px; margin-left:%;">   
-  <h3> Asignar Estudiantes </h3> <br>       
+  <div id="form-estudiantes" style="background-color: white; margin-top:px; width:100%; padding:20px; margin-left:%;">   
+  <h3> Asignar Estudiantes </h3>        
 <table class="table">
   <thead>
     <tr>
@@ -85,10 +85,8 @@ include("../menu_lateral.php");
     </tr>
   </tbody>
 </table>
-</div>             
-           
-            
-            <div class="col-md-12"><br>
+</div>                        
+            <div class="col-md-12">
                 <button class="btn btn-success">Guardar</button>
             </div>
         </form>
