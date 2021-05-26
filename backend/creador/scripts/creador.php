@@ -124,30 +124,6 @@ $conexion->query(" CREATE TABLE $namedb.solicitud_empleo
 ");
 
 
-//Tabla de docentes
-$conexion->query(" CREATE TABLE $namedb.docentes
-( `id_docente` INT NOT NULL AUTO_INCREMENT , 
-`nombre_docente` VARCHAR(200) NOT NULL , 
-`identificacion` VARCHAR(200) NOT NULL,
-`lugar_nacimiento` VARCHAR(200) NOT NULL , 
-`direccion` VARCHAR(200) NOT NULL , 
-`fecha_nacimiento` VARCHAR(200) NOT NULL ,
-`estado_civil` VARCHAR(200) NOT NULL , 
-`nivel_academico` VARCHAR(200) NOT NULL , 
-`carrera` VARCHAR(200) NOT NULL , 
-`materia` VARCHAR(200) NOT NULL , 
-`experiencia` VARCHAR(200) NOT NULL, 
-`experiencia_grado` VARCHAR(200) NOT NULL , 
-`apellido` VARCHAR(200) NOT NULL , 
-`telefono` VARCHAR(200) NOT NULL , 
-`titulo` VARCHAR(100) NOT NULL , 
-`foto` VARCHAR(100) NULL ,
-`creado_por` VARCHAR(100) NOT NULL , 
-`fecha_creacion` TIMESTAMP NOT NULL ,
- PRIMARY KEY (`id_docente`)) ENGINE = InnoDB;
-");
-
-
 //Tabla de asignaturas
 $conexion->query("CREATE TABLE $namedb.asignaturas 
 ( `id_asignatura` INT NOT NULL AUTO_INCREMENT , 
@@ -258,7 +234,42 @@ $conexion->query("CREATE TABLE $namedb.relaciones_acp
 `fecha_creacion` TIMESTAMP NOT NULL , 
 PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
 ");
-
+//Tabla de empleados
+$conexion->query("CREATE TABLE $namedb.empleados
+( `id_empleado` INT NOT NULL AUTO_INCREMENT ,
+`nombre` VARCHAR(100) NULL , 
+`apellido` VARCHAR(100) NULL , 
+`cedula` VARCHAR(100) NULL,
+`telefono` VARCHAR(14) NULL,
+`email` VARCHAR(14) NULL,
+`grado_academico` VARCHAR(14) NULL,
+`salario` int(5) NULL,
+`direccion` TEXT() NULL , 
+`lugar_nacimiento` TEXT() NULL ,
+`estado_civil` VARCHAR(100) NULL , 
+`fecha_nacimiento` VARCHAR(100) NULL , 
+`carrera` VARCHAR(100) NULL ,
+`experiencia` VARCHAR(100) NULL ,
+`departamento` VARCHAR(100) NULL , 
+`tipo_contrato` VARCHAR(100) NULL , 
+`nombre_contacto` VARCHAR(100) NULL , 
+`parentesco_contacto` VARCHAR(100) NULL , 
+`telefono_contacto` VARCHAR(100) NULL , 
+`estado` VARCHAR(100) NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_empleado`)) ENGINE = InnoDB;
+");
+//Tabla de relaciones asignaturas y docentes
+$conexion->query("CREATE TABLE $namedb.relacion_rad
+(`id_relacion` INT NOT NULL AUTO_INCREMENT ,
+`id_docente` INT(10) NULL, 
+`id_asignatura` VARCHAR(100) NULL, 
+`estado` VARCHAR(100) NULL, 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
+");
 //Tabla de relaciones asignaturas, cursos y periodos(acp)
 $conexion->query("CREATE TABLE $namedb.asistencia
 (`id_asistencia` INT NOT NULL AUTO_INCREMENT ,
@@ -319,6 +330,7 @@ $conexion->query("CREATE TABLE $namedb.permisos
 `usuarios_eliminar` VARCHAR(1) NOT NULL DEFAULT '1',
 `informacion` VARCHAR(1) NOT NULL DEFAULT '1',
 `informacion_editar` VARCHAR(1) NOT NULL DEFAULT '1',
+`roles` VARCHAR(1) NOT NULL DEFAULT '1',
 `estado` VARCHAR(100) NULL, 
 `creado_por` VARCHAR(100) NOT NULL , 
 `fecha_creacion` TIMESTAMP NOT NULL , 

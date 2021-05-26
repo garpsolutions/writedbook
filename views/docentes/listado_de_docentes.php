@@ -3,7 +3,7 @@ include("../menu_lateral.php");
 ?>
 
 <!-- Este es el Filtro de la tabla de asiganaturas -->
-<div id="form-estudiantes" style="background-color: white; margin-top:30px; width:83%; padding:20px; margin-left:300px;">
+<div id="form-estudiantes" style="background-color: white; margin-top:30px; width:75%; padding:20px; margin-left:300px;">
     <div>
     <form action="" method="post">
       <h3> Listado de Docentes </h3> 
@@ -66,7 +66,7 @@ include("../menu_lateral.php");
 
 <!-- Este es el listado de la tabla de docentes -->
 
-<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:90%; padding:20px; margin-left:%;">
+<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:90%; padding:20px;">
 <table class="table">
   <thead>
     <tr>

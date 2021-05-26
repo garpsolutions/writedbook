@@ -1,5 +1,6 @@
 <?php 
-include("../menu_lateral.php"); 
+include("../menu_lateral.php");
+$roles = $conexion->query("SELECT nombre FROM $institucion.roles ORDER BY id_rol DESC");
 ?> 
 <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:60%; padding-bottom:50px !important; padding:20px; margin-left:24%;">
     <div>
@@ -17,11 +18,13 @@ include("../menu_lateral.php");
             </div>
             <div class="col-md-12"><br>
                 <select name="rol" class="form-control" id="">
-                    <option value="secre">Secretaria</option>
-                    <option value="docente">Docente</option>
-                    <option value="director">Director</option>
-                    <option value="admin">Administrador</option>
-                    <option value="contador">Contador</option>
+                <?php while($rol = $roles->fetch_assoc())
+                {
+                ?>
+                    <option value="<?php echo $rol['nombre']?>"><?php echo $rol["nombre"]?></option>
+                <?php   
+                }
+               ?>
                 </select>
             </div>
             <div class="col-md-6"><br>

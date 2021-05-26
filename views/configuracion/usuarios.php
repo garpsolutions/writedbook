@@ -22,9 +22,34 @@ $usuarios_tb = $conexion->query("SELECT * FROM $institucion.usuarios");
         <tr>
           <th scope="row"><?php echo $usuarios["nombre"] ?></th>
           <td><?php echo $usuarios["user_nombre"] ?></td>
-          <td><?php echo $usuarios["rol"] ?></td>
-          <td><button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-eye"></i></button ><button data-bs-toggle="modal" data-bs-target="#exampleModal2" style="margin-left:5px"  class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+          <td><?php echo $usuarios["rol"]; ?></td>
+          <td>
+            <a class="btn btn-warning" href="editar_user.php?id=<?php echo $usuarios['id_user']; ?>" >
+              <i class="fa fa-pencil"></i>
+            </a>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $usuarios["id_user"];?>" style="margin-left:5px"  class="btn btn-danger">
+              <i class="fa fa-trash"></i>
+            </button>
+          </td>
         </tr>
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal<?php echo $usuarios["id_user"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel<?php echo $usuarios["id_user"] ?>" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel<?php echo $usuarios["id_user"] ?>">Eliminar usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Desea eliminar el usuario: <?php echo $usuarios["user_nombre"] ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="../../scripts/usuarios/eliminar.php?id=<?php echo $usuarios['id_user']?>" type="button" class="btn btn-danger">Eliminar</a>
+      </div>
+    </div>
+  </div>
+</div>
       <?php
     }
   ?>
@@ -33,38 +58,24 @@ $usuarios_tb = $conexion->query("SELECT * FROM $institucion.usuarios");
     <a href="nuevo_user.php"><button class="btn btn-secondary">Nuevo usuario</button> </a>
     </div>  
 </div>
+<?php 
+  if(isset($_GET["back"])){
+    ?>
+    <script>
+       $(document).ready(function(){
+            Swal.fire({
+            title: 'Usuario eliminado',
+            showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+        }
+        });
+      });
+    </script>
+<?php 
+  }
+?>  
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Historial del usuario</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel2">Eliminar usuario</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Seguro que desea eliminar este usuario?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-danger">Eliminar</button>
-      </div>
-    </div>
-  </div>
-</div>
+

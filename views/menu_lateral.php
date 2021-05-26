@@ -4,13 +4,15 @@ session_start();
     include("../../backend/conexion/cone.php"); 
     $institucion = $_SESSION['institucion'];
     $rol =  $_SESSION['rol'];
+    $nombre =  $_SESSION['nombre'];
+    $usuario =  $_SESSION['user'];
     $permisos= $conexion->query("SELECT * FROM $institucion.permisos where rol = '$rol'");
     $permisos_user = $permisos->fetch_assoc();
 ?>
 <div id="menu_lateral">
     <!-- Menu ancho -->
     <div id="menu-ancho">
-        <div id="logo">GARP solutions</div>
+        <div id="logo">GARP WritedBook</div>
         <div class="row">
             <div class="col-md-3">
                 <img src="../../img/tes.png" id="perfil" width="60" alt="">
@@ -18,7 +20,7 @@ session_start();
             <div class="col-md-9" >
                 <div class="bienvenido">
                 <small>Bienvenido <br>
-                    <strong>Freddy Pereyra </strong> </small> 
+                    <strong><?php echo $nombre ?></strong> </small> 
                 </div>  
             </div>
         </div>
@@ -226,7 +228,7 @@ if($permisos_user['configuracion']==1){
                    <hr>
                 </div>
                 <div>
-                <a href="../configuracion/roles.php">Roles</a>
+                <a href="../configuracion/lista_roles.php">Roles</a>
                    <hr>
                 </div>
             </div>

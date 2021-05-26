@@ -29,7 +29,7 @@
                         <img src="../../img/tes.png" width="35" alt="">
                     </div>
                     <div style="float: left;">
-                        CorleoneX
+                    <?php echo $usuario ?>
                     </div>
                 </div>
             </div>

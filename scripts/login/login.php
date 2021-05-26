@@ -24,12 +24,13 @@ catch (Exception $e) {
 //asignacion del rol del usuario a la variable normal para luego asignar a la variable global rol
     $user = $usuario_db->fetch_assoc();
     $rol= $user["rol"];
-
+    $nombre= $user["nombre"];
 // start a session
 session_start();
 
 // initialize session variables
 $_SESSION['user'] = $usuario;
+$_SESSION['nombre'] = $nombre;
 $_SESSION['rol']= $rol;
 $_SESSION['institucion']= $institucion;
 
