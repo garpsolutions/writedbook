@@ -4,7 +4,7 @@ include("../menu_lateral.php");
 <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:70%; padding:20px; margin-left:300px;">
     <div>
     <form action="" method="post">
-      <h3> Datos del Aula </h3> 
+    <h3> Datos del Aula </h3> 
         <div class="row">
 
         <div class="col-md-3"><br>
@@ -64,63 +64,63 @@ include("../menu_lateral.php");
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr> 
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
     <tr>
       <td scope="row">Wilfred</td>
       <td>Mateo</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
 
     
@@ -129,7 +129,7 @@ include("../menu_lateral.php");
       <td>Mariano</td>
       <td>13</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
 
     </tr>
     <tr>
@@ -137,7 +137,7 @@ include("../menu_lateral.php");
       <td >Cornelio</td>
       <td>12</td>
       <td>8vo</td>
-      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button></a></td>
+      <td><a href="detalles_estudiante.php"><button class="btn btn-primary">Añadir</button> <button class="btn btn-danger">Descartar</button></a></td>
     </tr>
   </tbody>
 </table>

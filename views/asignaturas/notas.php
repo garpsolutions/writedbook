@@ -43,7 +43,7 @@
             </div>
             
             <div class="col-md-12"><br>
-            <a   class="btn btn-primary " id="anterior1">Anterior</a>  <button class="btn btn-success">Cancelar</button>  <button class="btn btn-danger"> Guardar</button>
+            <button class="btn btn-success"> Guardar</button>  <a   class="btn btn-danger " id="anterior1">Anterior</a> 
             </div>
 
         </form>
