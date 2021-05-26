@@ -45,7 +45,7 @@ include("../menu_lateral.php");
             </select>
             </div> 
 
-            <div id="form-estudiantes" style="background-color: white; height:400px; margin-top:25px; width:100%; padding:20px; overflow:scroll">  
+            <div id="form-estudiantes" style="background-color: white; height:400px; margin-top:25px; width:100%; padding:20px; overflow:scroll; overflow-x:hidden">  
   <h3> Asignar Estudiantes </h3>        
 <table class="table">
   <thead>
