@@ -163,7 +163,7 @@ PRIMARY KEY (`id_asignatura`)) ENGINE = InnoDB;
 //Tabla de relaciones asignaturas, periodos, estudiantes, docentes, cursos y aulas
 $conexion->query("CREATE TABLE $namedb.relaciones_asignaturas
 ( `id_relacion` INT NOT NULL AUTO_INCREMENT,
-`id_periodo` INT(10) NULL ,
+`id_periodo` INT(10) NULL,
 `id_asignatura` INT(10) NULL,
 `id_estudiante` INT(10) NULL,
 `puntuacion` INT(10) NULL,
