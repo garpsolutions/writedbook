@@ -28,8 +28,14 @@
                     <div style="float: left; margin-right: 25px;">
                         <img src="../../img/tes.png" width="35" alt="">
                     </div>
-                    <div style="float: left;">
-                    <?php echo $usuario ?>
+                    <div style="float: left; color:white">
+                        <div id="user_log">
+                            <?php echo $usuario ?>
+                        </div>
+                        <div class="row" id="usuario_menu" style="position:absolute; display:none;">
+                            <div class="col-md-6"> <a style="color:white;"  href="../configuracion/editar_user2.php?user=<?php echo $usuario;?>"><i class="fa fa-cog"></i></a></div>
+                            <div class="col-md-6"><a style="color:white;" href="../../scripts/login/salir.php"><i class=" fa fa-lock"></i></a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -37,3 +43,15 @@
     </div>
 </body>
 </html>
+<script>
+     $("#user_log").click(function(){
+        $("#usuario_menu").toggle();
+     });
+     $(".fa").mouseover(function(){
+        $(this).css("font-size","23px")
+     });
+     $(".fa").mouseout(function(){
+        $(this).css("font-size","18px")
+     });
+ 
+</script>

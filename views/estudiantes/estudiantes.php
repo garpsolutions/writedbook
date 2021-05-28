@@ -1,32 +1,33 @@
 <?php 
 include("../menu_lateral.php");
 ?>
-<div id="estudiante">
-    <?php
-        include("pasos/estudiante.php"); 
-    ?>
-</div>
-<div id="padres">
-    <?php
-        include("pasos/padres.php");
-    ?>
-</div>
-<div id="cercano_madre">
-    <?php
-        include("pasos/cercanos_madre.php");
-    ?>
-</div>
-<div id="cercano_padre">
-    <?php
-        include("pasos/cercanos_padre.php");
-    ?>
-</div>
-<div id="documentos">
-    <?php
-        include("pasos/documentos.php");
-    ?>
-</div>
-
+<form action="../../scripts/estudiantes/agregar.php" method="get">
+    <div id="estudiante">
+        <?php
+            include("pasos/estudiante.php"); 
+        ?>
+    </div>
+    <div id="padres">
+        <?php
+            include("pasos/padres.php");
+        ?>
+    </div>
+    <div id="cercano_madre">
+        <?php
+            include("pasos/cercanos_madre.php");
+        ?>
+    </div>
+    <div id="cercano_padre">
+        <?php
+            include("pasos/cercanos_padre.php");
+        ?>
+    </div>
+    <div id="documentos">
+        <?php
+            include("pasos/documentos.php");
+        ?>
+    </div>
+</form>
 
 <script>
 //formularios inicialmente ocultos

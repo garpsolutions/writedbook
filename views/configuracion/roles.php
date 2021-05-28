@@ -10,7 +10,7 @@ include("../menu_lateral.php");
                 <input class="form-control" type="text" name="nombre" placeholder="Nombre del rol" id="" required>
             </div>
             <div class="col-md-6"><br>
-               <button class="btn btn-danger form-control">Cancelar</button>
+               <a href="lista_roles.php" class="btn btn-secondary form-control">Cancelar</a>
             </div>
             <div class="col-md-6"><br>
                <input type="submit" id="siguiente1" class="btn btn-primary form-control" value="Siguiente"/>

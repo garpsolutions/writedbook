@@ -25,7 +25,7 @@
                                 <input class="form-control" type="text" name="username" id="" placeholder="Usuario">
                             </div>
                             <div class="col-md-12"><br>
-                                <input class="form-control" type="text" name="nombre" id="" placeholder="Usuario">
+                                <input class="form-control" type="text" name="nombre" id="" placeholder="Nombre completo">
                             </div>
                             <div class="col-md-12"><br>
                                 <input class="form-control" type="password" name="contrasena" id="" placeholder="Contraseña">

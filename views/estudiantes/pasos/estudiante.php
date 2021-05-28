@@ -5,24 +5,24 @@
       <h5> Datos del estudiante </h5> 
         <div class="row">
             <div class="col-md-16"><br>
-                <input class="form-control" type="text" name="" placeholder="Nombre del estudiante" id="" require>
+                <input class="form-control" type="text" name="nombre_estudiante" placeholder="Nombre del estudiante" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="Text" placeholder="Apellido paterno" name="" id="" require>
+                <input class="form-control" type="Text" placeholder="Apellido paterno" name="apellido_paterno" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="Text" placeholder="Apellido materno" name="" id="" require>
+                <input class="form-control" type="Text" placeholder="Apellido materno" name="apellido_materno" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Colegio anterior" name="" id="" require>
+                <input class="form-control" type="text" placeholder="Colegio anterior" name="colegio_anterior" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Curso anterior" name="" id="" require>
+                <input class="form-control" type="text" placeholder="Curso anterior" name="curso_anterior" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <label for="">
                     Seleccione una provincia</label>
-            <select class="form-control" name="meal_preference" id="meal_preference"    >
+            <select class="form-control" name="provincia" id="meal_preference"    >
                 <option value="Santo Domingo">Provincias</option>
                 <option value="Santo Domingo">Santo Domingo</option>
                 <option value="Distrito Nacional">Distrito Nacional</option>
@@ -60,11 +60,11 @@
             </div>
             <div class="col-md-6"><br>
             <label for="">Fecha de Nacimiento</label>
-                <input class="form-control" type="Date" placeholder="000-000-0000" name="" id="" require>
+                <input class="form-control" type="Date" placeholder="000-000-0000" name="fecha_nacimiento" id="" require>
             </div>
             <div class="col-md-12"><br>
             <label for="">Motivo de salida</label>
-            <textarea class="form-control" placeholder="Razón de salida de la institución anterior" name="" id="" cols="10" rows="4"></textarea>
+            <textarea class="form-control" placeholder="Razón de salida de la institución anterior" name="razon" id="" cols="10" rows="4"></textarea>
             </div>
             <div class="col-md-12"><br>
                 <a  style="float: right;"
