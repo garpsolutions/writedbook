@@ -1,7 +1,7 @@
 <?php 
 include("../menu_lateral.php");
 ?>
-<form action="../../scripts/estudiantes/agregar.php" method="get">
+<form action="../../scripts/estudiantes/agregar.php" method="post">
     <div id="estudiante">
         <?php
             include("pasos/estudiante.php"); 
@@ -134,7 +134,24 @@ $("#anterior4").click(function(){
         $("#documentos").hide(300);
         $("#cercano_padre").show();    
  });
-
-
 </script>
+<?php 
+  if(isset($_GET["back"])){
+    ?>
+    <script>
+       $(document).ready(function(){
+            Swal.fire({
+            title: 'El estudiante ha sido creado',
+            showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+        }
+        });
+      });
+    </script>
+<?php 
+  }
+?>  
 

@@ -14,11 +14,11 @@
             </div>
             <div class="col-md-6"><br>
             <label for="">Teléfono</label>
-                <input class="form-control" type="Text" placeholder="000-000-0000" name="telefono_padre" id="" require>
+                <input class="form-control" type="Text" placeholder="000-000-0000" name="familiar_telefono_padre" id="" require>
             </div>
             <div class="col-md-6"><br>
             <label for="">Celular</label>
-                <input class="form-control" type="text" placeholder="000-000-0000" name="celular_padre" id="" require>
+                <input class="form-control" type="text" placeholder="000-000-0000" name="familiar_celular_padre" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <a   class="btn btn-danger " id="anterior3">Anterior</a>

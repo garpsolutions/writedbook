@@ -5,19 +5,19 @@
       <h5> Datos del estudiante </h5> 
         <div class="row">
             <div class="col-md-16"><br>
-                <input class="form-control" type="text" name="nombre_estudiante" placeholder="Nombre del estudiante" id="" require>
+                <input class="form-control" type="text" name="nombre_estudiante" placeholder="Nombre del estudiante" id="" required>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="Text" placeholder="Apellido paterno" name="apellido_paterno" id="" require>
+                <input class="form-control" type="Text" placeholder="Apellido paterno" name="apellido_paterno" id="" required>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="Text" placeholder="Apellido materno" name="apellido_materno" id="" require>
+                <input class="form-control" type="Text" placeholder="Apellido materno" name="apellido_materno" id="" required>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Colegio anterior" name="colegio_anterior" id="" require>
+                <input class="form-control" type="text" placeholder="Colegio anterior" name="colegio_anterior" id="" required>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="Curso anterior" name="curso_anterior" id="" require>
+                <input class="form-control" type="text" placeholder="Curso anterior" name="curso_anterior" id="" required>
             </div>
             <div class="col-md-6"><br>
                 <label for="">
@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-6"><br>
             <label for="">Fecha de Nacimiento</label>
-                <input class="form-control" type="Date" placeholder="000-000-0000" name="fecha_nacimiento" id="" require>
+                <input class="form-control" type="Date" placeholder="000-000-0000" name="fecha_nacimiento" id="" required>
             </div>
             <div class="col-md-12"><br>
             <label for="">Motivo de salida</label>

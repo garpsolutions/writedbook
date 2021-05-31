@@ -4,26 +4,26 @@
       <h5> Datos de tutores </h5> 
         <div class="row">
             <div class="col-md-12"><br>
-                <input class="form-control campo" type="text" name="" placeholder="Nombre del padre" id="" require>
+                <input class="form-control campo" type="text" value="<?php echo $estudiante['nombre_padre']?>" name="" placeholder="Nombre del padre" id="" require>
             </div>
             <div class="col-md-12"><br>
-                <input class="form-control campo" type="Text" placeholder="Nombre de la madre" name="" id="" require>
+                <input class="form-control campo" type="Text" value="<?php echo $estudiante['nombre_madre']?>" placeholder="Nombre de la madre" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <label for="">Teléfono de la madre</label>
-                <input class="form-control campo" type="Text" placeholder="000-000-000" name="" id="" require>
+                <input class="form-control campo" type="Text" value="<?php echo $estudiante['telefono_madre']?>" placeholder="000-000-000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <label for="">Teléfono de la padre</label>
-                <input class="form-control campo" type="text" placeholder="000-000-0000" name="" id="" require>
+                <input class="form-control campo" type="text" value="<?php echo $estudiante['telefono_padre']?>" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <label for=""><label for="">Celular de la padre</label></label>
-                <input class="form-control campo" type="text" placeholder="000-000-0000" name="" id="" require>
+                <input class="form-control campo" type="text" value="<?php echo $estudiante['celular_padre']?>" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
               <label for="">Celular de la madre</label>
-                <input class="form-control campo" type="Text" placeholder="000-000-0000" name="" id="" require>
+                <input class="form-control campo" type="Text" value="<?php echo $estudiante['celular_madre']?>" placeholder="000-000-0000" name="" id="" require>
             </div>
 
             <div  class="col-md-12"><br>
@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-6"><br>
                 <a   class="btn btn-danger " id="anterior1">Anterior</a>
-                <a href="detalles_estudiante.php" class="btn btn-secondary " id="">Cancelar</a>
+                <a href="detalles_estudiante.php?id=<?php echo $estudiante['id_estudiante']?>" class="btn btn-secondary " id="">Cancelar</a>
                 <a class="btn btn-warning editar" id="">Editar</a>
             </div>
             <div class="col-md-6"><br>

@@ -66,7 +66,7 @@ include("../menu_lateral.php");
 
 <!-- Este es el listado de la tabla de docentes -->
 
-<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:90%; padding:20px; margin-left:%;">
+<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:90%; padding:20px;">
 <table class="table">
   <thead>
     <tr>

@@ -21,7 +21,7 @@
             </div>
             <div class="col-md-6"><br>
                 <a   class="btn btn-danger " id="anterior4">Anterior</a>
-                <a href="detalles_estudiante.php" class="btn btn-secondary " id="">Cancelar</a>
+                <a href="detalles_estudiante.php?id=<?php echo $estudiante['id_estudiante']?>" class="btn btn-secondary " id="">Cancelar</a>
                 <a class="btn btn-warning  editar" id="">Editar</a>
 
             </div>

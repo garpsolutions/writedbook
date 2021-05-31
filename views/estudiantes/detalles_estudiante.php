@@ -1,5 +1,8 @@
 <?php 
-include("../menu_lateral.php"); 
+include("../menu_lateral.php");
+$id = $_GET["id"];
+$estudiante_db = $conexion->query("SELECT * FROM $institucion.estudiantes WHERE id_estudiante= $id");
+$estudiante= $estudiante_db->fetch_assoc();
 ?>
 <div id="perfil_estudiante" class="row" >
     <div style="background-color: white; width:600px; margin-top:50px;padding:40px; margin-left:8%;">
@@ -8,7 +11,7 @@ include("../menu_lateral.php");
                 <div>
                     <img src="../../img/pp.jpg"class="img-fluid" width="300px" style="border:solid 5px gray; border-radius:175px" alt=""><br><br>
                     <center>
-                        Freddy Miguel Pereyra, 4to C <br>
+                        <?php echo $estudiante["nombre"]." ". $estudiante["apellido_materno"]." ". $estudiante["apellido_paterno"];?>, 4to C <br>
                         <strong> Activo </strong> 
                     </center>
                     
@@ -23,7 +26,7 @@ include("../menu_lateral.php");
                         <a href="historial.php"><button class="btn btn form-control" style="background-color: rgb(11, 11, 53);color:white"> Historial estudiantil</button></a>
                     </div>
                     <div> <br>
-                        <a href="historial.php"><button class="btn btn form-control" style="background-color: rgb(11, 11, 53);color:white">Reportes de insidencia </button></a>
+                        <a href="insidencias.php?id=<?php echo $id ?>"><button class="btn btn form-control" style="background-color: rgb(11, 11, 53);color:white">Reportes de insidencia </button></a>
                     </div>
                     <div><br>
                         <button class="btn btn form-control" id="informacion" style="background-color: rgb(11, 11, 53);color:white">Información</button>

@@ -5,16 +5,16 @@
       <h5> Datos del estudiante </h5> 
         <div class="row">
             <div class="col-md-16"><br>
-                <input class="form-control campo" type="text" name="" placeholder="Nombre del estudiante" id="" require>
+                <input class="form-control campo" value="<?php echo $estudiante['nombre']?>" type="text" name="" placeholder="Nombre del estudiante" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control campo" type="Text" placeholder="Apellido paterno" name="" id="" require>
+                <input class="form-control campo" value="<?php echo $estudiante['apellido_paterno']?>" type="Text" placeholder="Apellido paterno" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control campo" type="Text" placeholder="Apellido materno" name="" id="" require>
+                <input class="form-control campo" value="<?php echo $estudiante['apellido_materno']?>" type="Text" placeholder="Apellido materno" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control campo" type="text" placeholder="Colegio anterior" name="" id="" require>
+                <input class="form-control campo"value="<?php echo $estudiante['colegio_anterior']?>" type="text" placeholder="Colegio anterior" name="" id="" require>
             </div>
             <div class="col-md-6"><br>
                 <input class="form-control campo" type="text" placeholder="Curso anterior" name="" id="" require>
@@ -22,7 +22,8 @@
             <div class="col-md-6"><br>
                 <label for="">
                     Seleccione una provincia</label>
-            <select class="form-control campo" name="meal_preference" id="meal_preference"    >
+            <select class="form-control campo" name="meal_preference" id="meal_preference">
+                <option value="<?php echo $estudiante['apellido_paterno']?>"><?php echo $estudiante['provincia']?></option>
                 <option value="Santo Domingo">Provincias</option>
                 <option value="Santo Domingo">Santo Domingo</option>
                 <option value="Distrito Nacional">Distrito Nacional</option>
@@ -60,14 +61,14 @@
             </div>
             <div class="col-md-6"><br>
             <label for="">Fecha de Nacimiento</label>
-                <input class="form-control campo" type="Date" placeholder="000-000-0000" name="" id="" require>
+                <input class="form-control campo" value="<?php echo $estudiante['fecha_nacimiento']?>" type="Date" placeholder="000-000-0000" name="" id="" require>
             </div>
             <div class="col-md-12"><br>
             <label for="">Motivo de salida</label>
-            <textarea class="form-control campo" placeholder="Razón de salida de la institución anterior" name="" id="" cols="10" rows="4"></textarea>
+            <textarea class="form-control campo" placeholder="Razón de salida de la institución anterior" name="" id="" cols="10" rows="4"><?php echo $estudiante['motivo_cambio_colegio']?></textarea>
             </div>
             <div class="col-md-6"><br>
-                <a href="detalles_estudiante.php" class="btn btn-secondary " id="">Cancelar</a>
+                <a href="detalles_estudiante.php?id=<?php echo $estudiante['id_estudiante']?>" class="btn btn-secondary" id="">Cancelar</a>
                 <a class="btn btn-warning  editar" id="">Editar</a>
             </div>
             <div class="col-md-6"><br>
