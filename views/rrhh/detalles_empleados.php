@@ -1,5 +1,8 @@
 <?php 
 include("../menu_lateral.php"); 
+$id=$_GET["id"];
+$empleado_db=$conexion->query("SELECT nombre, puesto FROM $institucion.empleados WHERE id_empleado = $id");
+$empleado= $empleado_db->fetch_assoc();
 ?>
 <link rel="stylesheet" href="../../css/detalles.css">
 <div id="perfil_estudiante" class="row" >
@@ -9,7 +12,7 @@ include("../menu_lateral.php");
                 <div>
                     <img src="../../img/pp.jpg"class="img-fluid" width="300px" style="border:solid 5px gray; border-radius:175px" alt=""><br><br>
                     <center>
-                        Freddy Miguel Pereyra <br> Personal de limpieza <br>
+                    <?php echo $empleado["nombre"] ?><br> <?php echo $empleado["puesto"] ?><br>
                         <strong> Activo </strong> 
                     </center>
                     
@@ -18,7 +21,7 @@ include("../menu_lateral.php");
             <div class="col-md-6">
                 <div>
                     <div>
-                        <button class="btn btn form-control opcion" id="indice">Informacion</button>
+                        <a href="editar_empleado.php?id=<?php echo $id ?>" class="btn btn form-control opcion">Informacion</a>
                     </div>
                     <div> <br>
                         <a href="historial.php"><button class="btn btn form-control opcion">Permisos</button></a>

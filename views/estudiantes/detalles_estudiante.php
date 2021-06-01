@@ -40,6 +40,7 @@ $estudiante= $estudiante_db->fetch_assoc();
     </div>
 </div>
 <div id="informacion">
+<form action="../../scripts/estudiantes/editar_estudiante.php" method="post">
 <div id="estudiante">
     <?php
         include("paso_modificar/estudiante.php"); 
@@ -65,6 +66,7 @@ $estudiante= $estudiante_db->fetch_assoc();
         include("paso_modificar/documentos.php");
     ?>
 </div>
+</form>
 
 
 <script>
@@ -72,7 +74,8 @@ $estudiante= $estudiante_db->fetch_assoc();
     $(".campo").attr("disabled","true");
 //formulario activo
     $(".editar").click(function(){
-        alert("fgdfgh");
+        $(".form-control").attr("disabled",false);
+
     });
 
 //formularios inicialmente ocultos

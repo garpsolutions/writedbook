@@ -26,8 +26,7 @@
 
             </div>
             <div class="col-md-6"><br>
-                <a  style="float: right;"
-                class="btn btn-success " id="siguiente4">Guardar</a>
+                <button  style="float: right;"class="btn btn-success">Guardar</button>
             </div>
         </div>
     </div>

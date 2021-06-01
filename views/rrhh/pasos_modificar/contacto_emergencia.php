@@ -6,16 +6,18 @@
                 <label for="">Persona a contactar en caso de emergencia</label>
             </div>
             <div class="col-md-12"><br>
-                <input class="form-control" type="text" placeholder="Nombre" name="emergencia" id="" require>
+                <input class="form-control" type="text" value="<?php echo $empleado["nombre_contacto"] ?>" placeholder="Nombre" name="emergencia" disabled required>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="parentesco" name="parentesco" id="" require>
+                <input class="form-control" type="text" value="<?php echo $empleado["parentesco_contacto"] ?>" placeholder="parentesco" name="parentesco" disabled required>
             </div>
             <div class="col-md-6"><br>
-                <input class="form-control" type="text" placeholder="000-000-0000" name="tel_emergencia" id="" require>
+                <input class="form-control" type="text" value="<?php echo $empleado["telefono_contacto"] ?>" placeholder="000-000-0000" name="tel_emergencia" disabled required>
             </div>
             <div class="col-md-6" ><br>
                 <a class="btn btn-danger" id="anterior1">Anterior</a>
+                <a href="detalles_empleados.php?id=<?php echo $id ?>" class="btn btn-secondary">Cancelar</a>
+                <a class="btn btn-warning" id="editar">Editar</a>
             </div>
             <div class="col-md-6" ><br>
                 <button class="btn btn-success" style="float:right">Guardar</button>

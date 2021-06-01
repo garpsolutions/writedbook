@@ -1,16 +1,19 @@
 
 <?php 
 include("../menu_lateral.php"); 
+$id=$_GET["id"];
+$empleado_db=$conexion->query("SELECT * FROM $institucion.empleados WHERE id_empleado = $id");
+$empleado= $empleado_db->fetch_assoc();
 ?>
 <form action="../../scripts/rrhh/nuevo_empleado.php" method="post">
 <div id="datos_personales">
 <?php 
-    include("pasos_registro/datos_personales.php"); 
+    include("pasos_modificar/datos_personales.php"); 
 ?>
 </div>
 <div id="contacto_emergencia">
 <?php 
-    include("pasos_registro/contacto_emergencia.php"); 
+    include("pasos_modificar/contacto_emergencia.php"); 
 ?>
 </div>
 </form>
