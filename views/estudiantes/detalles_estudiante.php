@@ -72,11 +72,6 @@ $estudiante= $estudiante_db->fetch_assoc();
 <script>
 //formulario disabled
     $(".campo").attr("disabled","true");
-//formulario activo
-    $(".editar").click(function(){
-        $(".form-control").attr("disabled",false);
-
-    });
 
 //formularios inicialmente ocultos
     $("#padres").hide();

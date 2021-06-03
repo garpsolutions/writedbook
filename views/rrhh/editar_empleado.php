@@ -5,7 +5,7 @@ $id=$_GET["id"];
 $empleado_db=$conexion->query("SELECT * FROM $institucion.empleados WHERE id_empleado = $id");
 $empleado= $empleado_db->fetch_assoc();
 ?>
-<form action="../../scripts/rrhh/nuevo_empleado.php" method="post">
+<form action="../../scripts/rrhh/editar_empleado.php" method="post">
 <div id="datos_personales">
 <?php 
     include("pasos_modificar/datos_personales.php"); 
@@ -19,7 +19,10 @@ $empleado= $empleado_db->fetch_assoc();
 </form>
 <script>
     $("#contacto_emergencia").hide();
-
+//formulario activo
+$(".editar").click(function(){
+        $(".form-control").attr("disabled",false);
+    });
 
     $("#siguiente1").click(function(){
         $("#contacto_emergencia").animate({

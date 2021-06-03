@@ -15,7 +15,6 @@ $empleado= $empleado_db->fetch_assoc();
                     <?php echo $empleado["nombre"] ?><br> <?php echo $empleado["puesto"] ?><br>
                         <strong> Activo </strong> 
                     </center>
-                    
                 </div>
             </div>
             <div class="col-md-6">
@@ -69,9 +68,6 @@ $empleado= $empleado_db->fetch_assoc();
 //formulario disabled
     $(".campo").attr("disabled","true");
 //formulario activo
-    $(".editar").click(function(){
-        alert("fgdfgh");
-    });
 
 //formularios inicialmente ocultos
     $("#padres").hide();

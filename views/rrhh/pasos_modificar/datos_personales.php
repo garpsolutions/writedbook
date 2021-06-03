@@ -20,7 +20,7 @@
             </div> 
             <div class="col-md-4"><br>
             <select class="form-control campo" name="estado_civil" id="meal_preference" disabled>
-                <option value="<?php echo $empleado["nombre_contacto"] ?>"><?php echo $empleado["estado_civil"] ?></option>
+                <option value="<?php echo $empleado["estado_civil"] ?>"><?php echo $empleado["estado_civil"] ?></option>
                 <option value="casado">Casado/a</option>
                 <option value="Soltero">Soltero/a</option>
                 <option value="Union libre">Union libre</option>
@@ -73,10 +73,10 @@
                 Tipo de contrato
                 </label>
             <select class="form-control campo" name="tipo" id="meal_preference"disabled>
-                <option value="<?php echo $empleado["nombre_contacto"] ?>"><?php echo $empleado["nombre_contacto"] ?></option>
-                <option value="Santo Domingo">Fijo</option>
-                <option value="Santo Domingo">Temporal</option>
-                <option value="Santo Domingo">Comision</option>
+                <option value="<?php echo $empleado["tipo_contrato"] ?>"><?php echo $empleado["tipo_contrato"] ?></option>
+                <option value="Fijo">Fijo</option>
+                <option value="Temporal">Temporal</option>
+                <option value="Comision">Comision</option>
                 <option value="Distrito Nacional">Practicante</option>
             </select>
             </div>
@@ -96,9 +96,9 @@
             <div class="col-md-12"><br>
                 <textarea class="form-control"  placeholder="Direccion" name="direccion" cols="30" rows="2" disabled><?php echo $empleado["direccion"] ?></textarea>
             </div>
-            <div class="col-md-6" ><br>
+            <div class="col-md-6"><br>
                 <a href="detalles_empleados.php?id=<?php echo $id ?>" class="btn btn-secondary">Cancelar</a>
-                <a class="btn btn-warning" id="editar">Editar</a>
+                <a class="btn btn-warning editar">Editar</a>
             </div>
             <div class="col-md-6"><br>
                 <a class="btn btn-primary" id="siguiente1" style="float:right">Siguiente</a>

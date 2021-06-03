@@ -159,6 +159,16 @@ if($permisos_user['nomina']==1){
                 <?php
                     }
                 ?>
+                <?php
+                    if($permisos_user['docentes']==1){
+                ?>
+                    <div>
+                        <a href="../rrhh/docentes.php">Docentes</a>
+                        <hr>
+                    </div>
+                <?php
+                    }
+                ?>
                 <div>
                     <a href="../rrhh/nomina.php">Nómina</a>
                    <hr>
