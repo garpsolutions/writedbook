@@ -136,6 +136,18 @@ $conexion->query("CREATE TABLE $namedb.asignaturas
 PRIMARY KEY (`id_asignatura`)) ENGINE = InnoDB;
 ");
 
+//Tabla de docentes
+$conexion->query("CREATE TABLE $namedb.docentes
+( `id_docente` INT NOT NULL AUTO_INCREMENT , 
+`id_empleado` VARCHAR(200) NULL ,
+`nombre` VARCHAR(200) NULL ,
+`usuario` VARCHAR(100) NULL, 
+`materia` VARCHAR(100) NULL, 
+`estado` VARCHAR(100) NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_docente`)) ENGINE = InnoDB;
+");
 //Tabla de relaciones asignaturas, periodos, estudiantes, docentes, cursos y aulas
 $conexion->query("CREATE TABLE $namedb.relaciones_asignaturas
 ( `id_relacion` INT NOT NULL AUTO_INCREMENT,
