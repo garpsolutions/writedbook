@@ -136,6 +136,18 @@ $conexion->query("CREATE TABLE $namedb.asignaturas
 PRIMARY KEY (`id_asignatura`)) ENGINE = InnoDB;
 ");
 
+//Tabla de docentes
+$conexion->query("CREATE TABLE $namedb.docentes
+( `id_docente` INT NOT NULL AUTO_INCREMENT , 
+`id_empleado` VARCHAR(200) NULL ,
+`nombre` VARCHAR(200) NULL ,
+`usuario` VARCHAR(100) NULL, 
+`materia` VARCHAR(100) NULL, 
+`estado` VARCHAR(100) NULL , 
+`creado_por` VARCHAR(100) NOT NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_docente`)) ENGINE = InnoDB;
+");
 //Tabla de relaciones asignaturas, periodos, estudiantes, docentes, cursos y aulas
 $conexion->query("CREATE TABLE $namedb.relaciones_asignaturas
 ( `id_relacion` INT NOT NULL AUTO_INCREMENT,
@@ -174,9 +186,9 @@ PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
 //Tabla de periodos
 $conexion->query("CREATE TABLE $namedb.periodos
 ( `id_periodo` INT NOT NULL AUTO_INCREMENT,
-`inicio` INT(10) NULL ,
-`cierre` INT(10) NULL ,
-`nombre` INT(10) NULL ,  
+`inicio` INT(100) NULL ,
+`cierre` INT(100) NULL ,
+`nombre` INT(100) NULL ,  
 `estado` VARCHAR(100) NULL , 
 `creado_por` VARCHAR(100) NOT NULL , 
 `fecha_creacion` TIMESTAMP NOT NULL , 
@@ -200,7 +212,7 @@ PRIMARY KEY (`id_informacion`)) ENGINE = InnoDB;
 //Tabla de cursos
 $conexion->query("CREATE TABLE $namedb.cursos
 ( `id_curso` INT NOT NULL AUTO_INCREMENT ,
-`nombre` varchar(50) NULL , 
+`nombre` varchar(100) NULL , 
 `modalidad` VARCHAR(100) NULL,
 `tanda` varchar(100) NULL,
 `estado` VARCHAR(100) NULL , 
@@ -212,7 +224,7 @@ PRIMARY KEY (`id_curso`)) ENGINE = InnoDB;
 //Tabla de aulas
 $conexion->query("CREATE TABLE $namedb.aulas
 ( `id_aula` INT NOT NULL AUTO_INCREMENT ,
-`nombre` varchar(50) NULL , 
+`nombre` varchar(100) NULL , 
 `curso` VARCHAR(100) NULL,
 `seccion` varchar(100) NULL,
 `docente` varchar(100) NULL,
@@ -238,18 +250,17 @@ PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
 $conexion->query("CREATE TABLE $namedb.empleados
 ( `id_empleado` INT NOT NULL AUTO_INCREMENT ,
 `nombre` VARCHAR(100) NULL , 
-`apellido` VARCHAR(100) NULL , 
 `cedula` VARCHAR(100) NULL,
-`telefono` VARCHAR(14) NULL,
-`email` VARCHAR(14) NULL,
-`grado_academico` VARCHAR(14) NULL,
-`salario` int(5) NULL,
+`telefono` VARCHAR(100) NULL,
+`email` VARCHAR(100) NULL,
+`puesto` VARCHAR(100) NULL,
+`nacionalidad` VARCHAR(100) NULL,
+`titulo_academico` VARCHAR(100) NULL,
+`salario` int(10) NULL,
 `direccion` TEXT NULL , 
 `lugar_nacimiento` TEXT NULL ,
 `estado_civil` VARCHAR(100) NULL , 
 `fecha_nacimiento` VARCHAR(100) NULL , 
-`carrera` VARCHAR(100) NULL ,
-`experiencia` VARCHAR(100) NULL ,
 `departamento` VARCHAR(100) NULL , 
 `tipo_contrato` VARCHAR(100) NULL , 
 `nombre_contacto` VARCHAR(100) NULL , 
@@ -284,7 +295,7 @@ PRIMARY KEY (`id_asistencia`)) ENGINE = InnoDB;
 //Tabla de roles
 $conexion->query("CREATE TABLE $namedb.roles
 (`id_rol` INT NOT NULL AUTO_INCREMENT ,
-`nombre` VARCHAR(50) NULL, 
+`nombre` VARCHAR(100) NULL, 
 `creado_por` VARCHAR(100) NOT NULL , 
 `fecha_creacion` TIMESTAMP NOT NULL , 
 PRIMARY KEY (`id_rol`)) ENGINE = InnoDB;
