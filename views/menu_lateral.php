@@ -65,7 +65,7 @@ if($permisos_user['asignaturas']==1){
                 </div>
 
                 <div>
-                <a href="../proyectos/nuevo.php">Planificación</a>
+                <a href="../asignaturas/planificacion.php">Planificación</a>
                     <hr>
                 </div>
                 <div>
@@ -79,7 +79,7 @@ if($permisos_user['asignaturas']==1){
                 </div>
 
                 <div>
-                <a href="../asignaturas/asistencia.php">Registrar Asistencias</a>
+                <a href="../asignaturas/plan.php">Registrar Asistencias</a>
                    <hr>
                 </div>
             </div>

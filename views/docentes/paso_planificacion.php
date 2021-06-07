@@ -1,9 +1,9 @@
 <?php 
 include("../menu_lateral.php");
 ?>
-<div id="agregar_docente">
+<div id="creacion_de_unidades">
     <?php
-        include("agregar_docente.php"); 
+        include("creacion_de_unidades.php"); 
     ?>
 </div>
 <div id="exp_laboral_docentes">
@@ -21,15 +21,15 @@ include("../menu_lateral.php");
         $("#exp_laboral_docentes").animate({
             opacity: '1',
         });
-        $("#agregar_docente").animate({
+        $("#creacion_de_unidades").animate({
       opacity: '0.5',
     });
-        $("#agregar_docente").hide(300);
+        $("#creacion_de_unidades").hide(300);
         $("#exp_laboral_docentes").show();    
     });
 //regresar a datosnotas
     $("#anterior1").click(function(){
-        $("#agregar_docente").animate({
+        $("#creacion_de_unidades").animate({
             opacity: '1'
         });
 
@@ -37,7 +37,7 @@ include("../menu_lateral.php");
       opacity: '0.5',
     });
         $("#exp_laboral_docentes").hide(300);
-        $("#agregar_docente").show();    
+        $("#creacion_de_unidades").show();    
     });
 
 </script>
