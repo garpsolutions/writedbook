@@ -10,6 +10,7 @@
     $id_empleado = $_POST["id"];
     $usuario=$_POST["usuario"];
     $materia=$_POST["materia"];
+    $tanda = $_POST["tanda"];
 
 
     $docentes_db = $conexion->query("SELECT * FROM $institucion.docentes WHERE id_empleado = $id_empleado");
@@ -20,8 +21,8 @@
         $empleado = $empleados_db->fetch_assoc();
         $nombre= $empleado["nombre"];
 
-        $conexion->query("INSERT INTO $institucion.docentes (id_empleado, nombre, usuario, estado, creado_por)
-        VALUES ('$id_empleado', '$nombre', '$usuario','Inactivo','$usuario_actual')");
+        $conexion->query("INSERT INTO $institucion.docentes (id_empleado, nombre,tanda, usuario, estado, creado_por)
+        VALUES ('$id_empleado', '$nombre','$tanda', '$usuario','Inactivo','$usuario_actual')");
 
         $docentes_db2 = $conexion->query("SELECT * FROM $institucion.docentes ORDER BY id_docente DESC LIMIT 1");
         $docente = $docentes_db2->fetch_assoc();
