@@ -53,6 +53,8 @@ include("../menu_lateral.php");
             </form>
 <!-- Esta es la Lista de las Asignaturas -->
 
+
+
 <div id="form-estudiantes" style="background-color:white; margin-top:20px; width:70%; padding:20px;">
 <table class="table">
   <thead>
@@ -79,7 +81,7 @@ include("../menu_lateral.php");
       <td>Matematica</td>
       <td>Basica</td>
       <td>All</td>
-      <td>Wilfred</td>>
+      <td>Wilfred</td>
 
     </tr>
     <tr>
