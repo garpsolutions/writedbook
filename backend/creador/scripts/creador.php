@@ -128,8 +128,9 @@ $conexion->query(" CREATE TABLE $namedb.solicitud_empleo
 $conexion->query("CREATE TABLE $namedb.asignaturas 
 ( `id_asignatura` INT NOT NULL AUTO_INCREMENT , 
 `asignatura` VARCHAR(200) NULL ,
+`codigo` VARCHAR(200) NULL ,
+`tipo` VARCHAR(200) NULL ,
 `nivel_academico` VARCHAR(200) NULL ,
-`docente` VARCHAR(100) NULL, 
 `estado` VARCHAR(100) NULL , 
 `creado_por` VARCHAR(100) NOT NULL , 
 `fecha_creacion` TIMESTAMP NOT NULL , 

@@ -8,19 +8,17 @@ include("../menu_lateral.php");
     <form action="" method="post">
       <h3> Listado de Asiganatura </h3> 
         <div class="row">
-
-        <div class="col-md-2"><br>
-            <select class="form-control" name="meal_preference" id="meal_preference"    >
-                <option value="Asiganatura">Tipo de Asignatura</option>
-                <option value="Asiganatura">Basica</option>
-                <option value="Naturales">Tecnica</option>
-                <option value="Naturales">Extraricular</option>
-                <option value="Naturales">Metodologica</option>
-                <option value="Naturales">Otras</option>
-            </select>
+            <div class="col-md-2"><br>
+              <select class="form-control" name="meal_preference" id="meal_preference"    >
+                  <option value="Asiganatura">Tipo de Asignatura</option>
+                  <option value="Asiganatura">Basica</option>
+                  <option value="Naturales">Tecnica</option>
+                  <option value="Naturales">Extraricular</option>
+                  <option value="Naturales">Metodologica</option>
+                  <option value="Naturales">Otras</option>
+              </select>
             </div>
 
-           
             <div class="col-md-2"><br>
             <select class="form-control" name="meal_preference" id="meal_preference"    >
                 <option value="Santo Domingo">Nivel Academico</option>
@@ -41,7 +39,7 @@ include("../menu_lateral.php");
             </div>
 
             <div class="col-md-2"><br>
-            <select class="form-control" name="meal_preference" id="meal_preference"    >
+            <select class="form-control" name="meal_preference" id="meal_preference">
                 <option value="Santo Domingo">Curso</option>
                 <option value="Santo Domingo">1ro </option>
                 <option value="Santo Domingo">2do </option>
@@ -52,18 +50,17 @@ include("../menu_lateral.php");
             <div class="col-md-2"><br>
                 <button class="btn btn-success">Buscar</button>
             </div>
-
+            </form>
 <!-- Esta es la Lista de las Asignaturas -->
 
-<div id="form-estudiantes" style="background-color: white; margin-top:20px; width:90%; padding:20px; margin-left:%;">
+<div id="form-estudiantes" style="background-color:white; margin-top:20px; width:70%; padding:20px;">
 <table class="table">
   <thead>
     <tr>
-    <th scope="col">Codigo</th>
+      <th scope="col">Codigo</th>
       <th scope="col">Nombre</th>
       <th scope="col">Tipo</th>
       <th scope="col">Nivel</th>
-      <th scope="col">Curso</th>
       <th scope="col">Docentes</th>
     </tr>
   </thead>
@@ -74,8 +71,6 @@ include("../menu_lateral.php");
       <td>Naturales</td>
       <td>Basica</td>
       <td>All</td>
-      <td>1ro - 3ro</td>
-      <td>El RRR</td>
     </tr> 
   
     
@@ -84,7 +79,6 @@ include("../menu_lateral.php");
       <td>Matematica</td>
       <td>Basica</td>
       <td>All</td>
-      <td>1ro - 5to</td>
       <td>Wilfred</td>>
 
     </tr>
@@ -93,15 +87,12 @@ include("../menu_lateral.php");
       <td >Programacion</td>
       <td>Tecnica</td>
       <td>Tecnico Informatica</td>
-      <td>3ro - 5to de Bachiller</td>
       <td>Akagami</td>
     </tr>
 
     </tbody>
 </table>
-           
-          
-        </form>
+        
         </div>
     </div>
 </div>

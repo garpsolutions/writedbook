@@ -1,5 +1,6 @@
 <?php 
 include("../menu_lateral.php");
+$docentes_db= $conexion->query("SELECT  * FROM $institucion.docentes ORDER BY id_docente DESC");
 ?>
 
 <!-- Este es el Filtro de la tabla de asiganaturas -->
@@ -66,43 +67,50 @@ include("../menu_lateral.php");
 
 <!-- Este es el listado de la tabla de docentes -->
 
-<div id="form-estudiantes" style="background-color: white; margin-top:50px; width:90%; padding:20px;">
+<div id="form-estudiantes" style="background-color: white; margin-top:20px; width:90%; padding:20px;">
 <table class="table">
   <thead>
     <tr>
       <th scope="col">Nombre de Docente</th>
-      <th scope="col">Nombre de la Materia</th>
-      <th scope="col">Tipo de Materia</th>
-      <th scope="col">Nivel Academico</th>
+      <th scope="col">Curso encargado</th>
       <th scope="col">Tanda</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Accion</th>
     </tr>
   </thead>
   <tbody>
-  
+  <?php while($docentes=$docentes_db->fetch_assoc()) {?>
     <tr>
-      <td scope="row">Freddy Pereyra</td>
-      <td>Programacion</td>
-      <td>Tecnica</td>
-      <td>Tecnico</td>
-      <td>Vespertina</td>
+      <td scope="row"> <?php echo $docentes["nombre"]; ?></td>
+      <td>4to C</td>
+      <td> <?php echo $docentes["tanda"]; ?></td>
+      <td> <?php echo $docentes["estado"]; ?></td>
+      <td>
+        <a href="editar_docentes.php?id=<?php echo $docentes["id_docente"]; ?>" class="btn btn-warning">Editar</a> 
+        <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $docentes["id_docente"]; ?>">Eliminar</a></td>
     </tr> 
-  
-    
-    <tr>
-      <td scope="row">Neitan Garcia</td>
-      <td>Educacion Fisica</td>
-      <td>Estraricular</td>
-      <td>Educacion Media</td>
-      <td>Matutina</td>
 
-    </tr>
-    <tr>
-      <td scope="row">Jorge Madrugador</td>
-      <td>Biologia</td>
-      <td>Basica</td>
-      <td>All</td>
-      <td>Matutina</td>
-    </tr>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal<?php echo $docentes["id_docente"]; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar docente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Seguro que desea eliminar este docente?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="../../scripts/rrhh/eliminar_docente.php?id=<?php echo $docentes["id_docente"]; ?>" class="btn btn-danger">Eliminar</a>
+      </div>
+    </div>
+  </div>
+</div>
+    <?php
+  }
+    ?>
   </tbody>
 </table>    
 <a href="agregar_docente.php" class="btn btn-secondary">Nuevo docente</a>
