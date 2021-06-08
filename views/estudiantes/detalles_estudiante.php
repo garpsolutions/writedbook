@@ -23,7 +23,7 @@ $estudiante= $estudiante_db->fetch_assoc();
                         <button class="btn btn form-control" id="indice"style="background-color: rgb(11, 11, 53);color:white">índice</button>
                     </div>
                     <div> <br>
-                        <a href="historial.php"><button class="btn btn form-control" style="background-color: rgb(11, 11, 53);color:white"> Historial estudiantil</button></a>
+                        <a href="historial.php?id=<?php echo $id ?>"><button class="btn btn form-control" style="background-color: rgb(11, 11, 53);color:white"> Historial estudiantil</button></a>
                     </div>
                     <div> <br>
                         <a href="insidencias.php?id=<?php echo $id ?>"><button class="btn btn form-control" style="background-color: rgb(11, 11, 53);color:white">Reportes de insidencia </button></a>

@@ -12,7 +12,7 @@
     $conexion->query("INSERT INTO $empresa.roles (nombre, estado, creado_por) VALUES ('admin_sys', 'activo','System')");
 
     //creacion del rol admin
-    $conexion->query("INSERT INTO $empresa.permisos (id_rol, rol, creado_por) VALUES ('1','admin','System')");
+    $conexion->query("INSERT INTO $empresa.permisos (rol, creado_por) VALUES ('admin','System')");
 
     //Informacion institucional
     $conexion->query("INSERT INTO $empresa.informacion (nombre,rnc, direccion, email,telefono, distrito, creado_por)

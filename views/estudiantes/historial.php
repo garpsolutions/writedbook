@@ -1,5 +1,6 @@
 <?php 
 include("../menu_lateral.php");
+$id= $_GET["id"];
 ?>
 <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:70%; padding:20px; margin-left:24%;">
 <h5>Historial estudiantil</h5>
@@ -42,5 +43,5 @@ include("../menu_lateral.php");
     </tr>
   </tbody>
 </table>
-<a href="detalles_estudiante.php"><button class="btn btn-danger">Anterior</button></a>
+<a href="detalles_estudiante.php?id=<?php echo $id ?>"><button class="btn btn-danger">Anterior</button></a>
 </div>

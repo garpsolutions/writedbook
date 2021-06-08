@@ -86,29 +86,6 @@ if($permisos_user['asignaturas']==1){
         </div>
 <?php
     }
-if($permisos_user['docentes']==1){
-?>
-        <div id="asignaturas-ancho" class="opciones-menu-ancho row">
-            <div class="col-md-10" style="padding-bottom:10px;">
-            <i class="fa fa-users"></i> Docentes
-            </div>
-            <div class="col-md-2">
-                +
-            </div>
-            <div class="submenu-ancho asignaturas-menu-ancho">
-            <div>
-                <a href="../docentes/paso_docentes.php">Agregar Docente</a>
-                   <hr>
-                </div>
-                               
-                <div>
-                <a href="../docentes/listado_de_docentes.php">Listas de Docentes</a>
-                   <hr>
-                </div>
-            </div>
-        </div>
-<?php
-    }
 if($permisos_user['cursos']==1){
 ?>
         <div id="cursos-ancho" class="opciones-menu-ancho row">
