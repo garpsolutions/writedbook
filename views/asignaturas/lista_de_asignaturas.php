@@ -54,44 +54,43 @@ include("../menu_lateral.php");
 <!-- Esta es la Lista de las Asignaturas -->
 
 <div id="form-estudiantes" style="background-color:white; margin-top:20px; width:70%; padding:20px;">
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Codigo</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">Nivel</th>
-      <th scope="col">Docentes</th>
-    </tr>
-  </thead>
-  <tbody>
-  
-    <tr>
-      <td scope="row">0001</td>
-      <td>Naturales</td>
-      <td>Basica</td>
-      <td>All</td>
-    </tr> 
-  
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Codigo</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Nivel</th>
+        <th scope="col">Docentes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">0001</td>
+        <td>Naturales</td>
+        <td>Basica</td>
+        <td>All</td>
+      </tr> 
     
-    <tr>
-      <td scope="row">0002</td>
-      <td>Matematica</td>
-      <td>Basica</td>
-      <td>All</td>
-      <td>Wilfred</td>>
+      
+      <tr>
+        <td scope="row">0002</td>
+        <td>Matematica</td>
+        <td>Basica</td>
+        <td>All</td>
+        <td>Wilfred</td>>
 
-    </tr>
-    <tr>
-      <td scope="row">0021</td>
-      <td >Programacion</td>
-      <td>Tecnica</td>
-      <td>Tecnico Informatica</td>
-      <td>Akagami</td>
-    </tr>
+      </tr>
+      <tr>
+        <td scope="row">0021</td>
+        <td >Programacion</td>
+        <td>Tecnica</td>
+        <td>Tecnico Informatica</td>
+        <td>Akagami</td>
+      </tr>
 
     </tbody>
-</table>
+  </table>
         
         </div>
     </div>
