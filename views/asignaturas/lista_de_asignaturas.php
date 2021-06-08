@@ -53,6 +53,7 @@ $asignaturas_db= $conexion->query("SELECT * FROM $institucion.asignaturas ");
             </form>
   <!-- Esta es la Lista de las Asignaturas -->
 
+<<<<<<< HEAD
 <div id="form-estudiantes" style="background-color:white; margin-top:20px; padding:20px;">
   <table class="table">
     <thead>
@@ -78,7 +79,6 @@ $asignaturas_db= $conexion->query("SELECT * FROM $institucion.asignaturas ");
           <a data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $asignaturas['id_asignatura'] ?>" class="btn btn-danger">Eliminar</a>
         </td>
       </tr> 
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal<?php echo $asignaturas["id_asignatura"] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
