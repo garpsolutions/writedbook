@@ -52,8 +52,6 @@ $asignaturas_db= $conexion->query("SELECT * FROM $institucion.asignaturas ");
             </div>
             </form>
   <!-- Esta es la Lista de las Asignaturas -->
-
-<<<<<<< HEAD
 <div id="form-estudiantes" style="background-color:white; margin-top:20px; padding:20px;">
   <table class="table">
     <thead>

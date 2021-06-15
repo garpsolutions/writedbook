@@ -14,10 +14,10 @@ else{
 <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:60%; padding:20px; margin-left:300px;">
     <div>
     <form action="../../scripts/asignaturas/agregar.php" method="post">
-      <h3> Creacion de Asignatura </h3> 
+      <h3> Creacion de asignatura </h3> 
         <div class="row">
     <input type="hidden" id="numero" value="<?php echo $codigo_numero ?>">
-    <input type="hidden" id="codigo2" name="codigo" value="<?php echo $codigo_numero ?>">
+    <input type="hidden" id="codigo2" name="codigo" value="<?php echo $codigo_numero ?>" required>
 
         <div class="col-md-6"><br>
         <label for=""> Codigo de la Materia</label>
@@ -55,7 +55,7 @@ else{
             </div>
 
            <div class="col-md-12"><br>
-                <button class="btn btn-success">Guardar</button>
+                <button id="guardar" class="btn btn-success">Guardar</button>
             </div>
         
         </form>
@@ -99,5 +99,43 @@ else{
         codigo = inicial_materia+inicial_nivel+inicial_tipo+ceros;
         $("#codigo2").val(codigo);
         $("#codigo").val(codigo);
-    })
+    });
+    $("#nivel").change(function(){
+        var numero_db = $("#numero").val();
+        var materia = $("#nombre").val();
+        var tipo =  $("#tipo").val();
+        var nivel =  $("#nivel").val();
+        inicial_materia= materia[0];
+        inicial_tipo = tipo[0];
+        inicial_nivel = nivel[0];
+        if(numero_db.length == 1){
+            ceros = "-00"+numero_db;
+        }
+        if(numero_db.length == 2){
+            ceros = "-0"+numero_db;
+        }
+        codigo = inicial_materia+inicial_nivel+inicial_tipo+ceros;
+        $("#codigo2").val(codigo);
+        $("#codigo").val(codigo);
+    });
+    $("#tipo").change(function(){
+        var numero_db = $("#numero").val();
+        var materia = $("#nombre").val();
+        var tipo =  $("#tipo").val();
+        var nivel =  $("#nivel").val();
+        inicial_materia= materia[0];
+        inicial_tipo = tipo[0];
+        inicial_nivel = nivel[0];
+        if(numero_db.length == 1){
+            ceros = "-00"+numero_db;
+        }
+        if(numero_db.length == 2){
+            ceros = "-0"+numero_db;
+        }
+        codigo = inicial_materia+inicial_nivel+inicial_tipo+ceros;
+        $("#codigo2").val(codigo);
+        $("#codigo").val(codigo);
+    });
+    
+
 </script>

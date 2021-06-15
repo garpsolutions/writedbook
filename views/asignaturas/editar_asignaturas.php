@@ -8,11 +8,11 @@ $asignatura = $asignaturas_db->fetch_assoc();
 <div id="form-estudiantes" style="background-color: white; margin-top:50px; width:75%; padding:20px; margin-left:300px;">
     <div>
     <form action="../../scripts/asignaturas/editar_asignatura.php" method="post">
-      <h3> Creacion de Asignatura </h3> 
+      <h3> Editar asignatura </h3> 
         <div class="row">
             <input type="hidden" name="id" value="<?php echo $id ?>">
             <input type="hidden" style="text-transform:uppercase;" value="<?php echo $asignatura["codigo"] ?>" id="codigo2">
-            <input type="hidden" style="text-transform:uppercase;" name="codigo" id="codigo3">
+            <input type="hidden" style="text-transform:uppercase;" name="codigo" id="codigo3" required>
 
             <div class="col-md-6"><br>
                 <label for=""> Codigo de la Materia</label>
@@ -51,7 +51,7 @@ $asignatura = $asignaturas_db->fetch_assoc();
 
            <div class="col-md-12"><br>
                 <a href="lista_de_asignaturas.php" class="btn btn-secondary">Cancelar</a>
-                <button class="btn btn-success">Guardar</button>
+                <button class="btn btn-success" id="guardar" disabled>Guardar</button>
             </div>
         </div>
     </form>
@@ -78,6 +78,7 @@ $asignatura = $asignaturas_db->fetch_assoc();
 ?>  
 <script>
     $("#nombre").keyup(function(){
+        $("#guardar").attr("disabled",false)
         var codigo_actual = $("#codigo2").val();
         var nivel = $("#nivel").val();
         var tipo =$("#tipo").val();
@@ -89,4 +90,42 @@ $asignatura = $asignaturas_db->fetch_assoc();
         $("#codigo").val(nuevo_codigo);
         $("#codigo3").val(nuevo_codigo);
     });
+    $("#nivel").change(function(){
+        var numero_db = $("#numero").val();
+        var materia = $("#nombre").val();
+        var tipo =  $("#tipo").val();
+        var nivel =  $("#nivel").val();
+        inicial_materia= materia[0];
+        inicial_tipo = tipo[0];
+        inicial_nivel = nivel[0];
+        if(numero_db.length == 1){
+            ceros = "-00"+numero_db;
+        }
+        if(numero_db.length == 2){
+            ceros = "-0"+numero_db;
+        }
+        codigo = inicial_materia+inicial_nivel+inicial_tipo+ceros;
+        $("#codigo2").val(codigo);
+        $("#codigo").val(codigo);
+    });
+    $("#tipo").change(function(){
+        var numero_db = $("#numero").val();
+        var materia = $("#nombre").val();
+        var tipo =  $("#tipo").val();
+        var nivel =  $("#nivel").val();
+        inicial_materia= materia[0];
+        inicial_tipo = tipo[0];
+        inicial_nivel = nivel[0];
+        if(numero_db.length == 1){
+            ceros = "-00"+numero_db;
+        }
+        if(numero_db.length == 2){
+            ceros = "-0"+numero_db;
+        }
+        codigo = inicial_materia+inicial_nivel+inicial_tipo+ceros;
+        $("#codigo2").val(codigo);
+        $("#codigo").val(codigo);
+    });
+    
+
 </script>

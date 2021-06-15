@@ -79,6 +79,39 @@ $conexion->query("CREATE TABLE $namedb.planificacion_inicial
  `modificado_por` VARCHAR(100) NULL , 
  PRIMARY KEY (`id_planificacion`)) ENGINE = InnoDB;
 ");
+
+// tabla de los temas para las unidades
+$conexion->query("CREATE TABLE $namedb.temas
+ ( `id_tema` INT NOT NULL AUTO_INCREMENT , 
+ `tema` VARCHAR(200) NULL , 
+ `id_unidad` INT(200) NULL , 
+ `fecha_inicio` VARCHAR(100) NULL , 
+ `fecha_cierre` VARCHAR(100) NULL , 
+ `fecha_creacion` TIMESTAMP  , 
+ `creado_por` VARCHAR(100) NULL , 
+ PRIMARY KEY (`id_tema`)) ENGINE = InnoDB;
+");
+
+// tabla de los items para los temas
+$conexion->query("CREATE TABLE $namedb.items
+ ( `id_item` INT NOT NULL AUTO_INCREMENT , 
+ `id_tema` INT(200) NULL , 
+ `item` VARCHAR(100) NULL , 
+ `fecha_creacion` TIMESTAMP  , 
+ `creado_por` VARCHAR(100) NULL , 
+ PRIMARY KEY (`id_tema`)) ENGINE = InnoDB;
+");
+
+// tabla de los actividades
+$conexion->query("CREATE TABLE $namedb.items
+ ( `id_actividad` INT NOT NULL AUTO_INCREMENT , 
+ `id_tema` INT(200) NULL , 
+ `actividad` VARCHAR(100) NULL , 
+ `fecha_creacion` TIMESTAMP  , 
+ `creado_por` VARCHAR(100) NULL , 
+ PRIMARY KEY (`id_tema`)) ENGINE = InnoDB;
+");
+
 //Tabla de reporte de conducta
 $conexion->query("CREATE TABLE $namedb.reportes_conducta
  ( `id_reporte` INT NOT NULL AUTO_INCREMENT , 
@@ -92,6 +125,7 @@ $conexion->query("CREATE TABLE $namedb.reportes_conducta
  `creado_por` VARCHAR(100) NULL ,
   PRIMARY KEY (`id_reporte`)) ENGINE = InnoDB;
 ");
+
 //Tabla de actividades
 $conexion->query("CREATE TABLE $namedb.actividades
 ( `id_actividad` INT NOT NULL AUTO_INCREMENT , 
@@ -164,6 +198,7 @@ $conexion->query("CREATE TABLE $namedb.relaciones_asignaturas
 `fecha_creacion` TIMESTAMP NOT NULL , 
 PRIMARY KEY (`id_relacion`)) ENGINE = InnoDB;
 ");
+
 //Tabla de calificador
 $conexion->query("CREATE TABLE $namedb.calificador
 ( `id_relacion` INT NOT NULL AUTO_INCREMENT,
@@ -349,5 +384,17 @@ $conexion->query("CREATE TABLE $namedb.permisos
 `id_estudiante` VARCHAR(100) NULL , 
 PRIMARY KEY (`id_permisos`)) ENGINE = InnoDB;
 ");
+
+$conexion->query("CREATE TABLE $namedb.unidades
+( `id_unidad` INT NOT NULL AUTO_INCREMENT , 
+`nombre` VARCHAR(200) NULL , 
+`asignatura` VARCHAR(200) NULL , 
+`curso` VARCHAR(200) NULL , 
+`fecha_inicio` DATE NULL , 
+`fecha_cierre` DATE NULL , 
+`creado_por` VARCHAR(100) NULL , 
+`fecha_creacion` TIMESTAMP NOT NULL , 
+PRIMARY KEY (`id_unidad`)) ENGINE = InnoDB;"
+);
     header("location:../views/creador_user.php?empresa=$namedb"); 
 ?>

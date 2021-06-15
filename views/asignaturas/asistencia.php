@@ -40,7 +40,7 @@ include("../menu_lateral.php");
                 <input class="form-control" type="text" placeholder="Encargado del Curso" name="" id="" require>
             </div>
 
-<div id="form-estudiantes" style="background-color: white; margin-top:20px; width:90%; padding:20px; margin-left:%;">
+<div id="form-estudiantes" style="background-color: white; margin-top:20px; width:90%; padding:20px;">
 <table class="table">
   <thead>
     <tr>
